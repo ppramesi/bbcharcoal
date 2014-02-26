@@ -1,0 +1,21 @@
+/*
+    DMcA - No Sidebar 
+    Custom Stylesheet
+*/
+
+#page {
+	width: 870px;
+ 	background: transparent url('http://mcaleavy.org/wp-content/themes/kaytwo/images/headers/static_page_bg2.jpg') repeat-y;
+	border: none;
+	padding: 0;
+}
+
+
+/* Header */
+
+#header {
+	height: 195px;
+	background: transparent url('http://mcaleavy.org/wp-content/themes/kaytwo/images/headers/static_header_bg_electro2.jpg') no-repeat top;
+}
+
+*/

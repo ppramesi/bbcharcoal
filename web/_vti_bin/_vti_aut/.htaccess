@@ -1,0 +1,20 @@
+# -FrontPage-
+
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymlinks
+Options +SymLinksIfOwnerMatch
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+require group authors administrators
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthType Passthrough
+AuthName bbcharcoal.com
+AuthUserFile /services/webpages/b/b/bbcharcoal.com/public/_vti_pvt/service.pwd
+AuthGroupFile /services/webpages/b/b/bbcharcoal.com/public/_vti_pvt/service.grp

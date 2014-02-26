@@ -1,0 +1,550 @@
+/*
+Author Name : Steve Lam
+Author Site : http://stevelam.org/
+Style Name  : True Blue
+Style URI   : http://stevelam.org/projects/trueblue/
+Version     : 1.3.4_svn
+Comments    : &ldquo;I don't know much about you but I like you because you're true blue.&rdquo;
+*/
+
+
+/* Support for Internet Exploder */
+@import url('css/ie6win.css');
+
+/* Support for customizations */
+@import url('css/custom.css');
+
+/* DMcA - button additions */
+
+.vimage {background: url("http://mcaleavy.org/wp-content/themes/kaytwo/rbox-info.gif") 50%
+no-repeat; line-height: 12px; padding: 12px 80px; text-align: to
+center; width:57%; float:right;}
+
+.image_narrow {background: #f2f2f2 url("http://mcaleavy.org/wp-content/themes/kaytwo/parrafo-code.png") 10px 0px
+no-repeat;
+border-top: 2px solid #CCC;
+border-bottom: 2px solid #CCC;
+padding: 5px 60px; 
+text-align: to center; 
+width:42%; float:right;}
+
+.image_wide {background: #f2f2f2 url("http://mcaleavy.org/wp-content/themes/kaytwo/parrafo-code.png") 10px 0px
+no-repeat;
+border-top: 2px solid #CCC;
+border-bottom: 2px solid #CCC;
+padding: 5px 60px; 
+text-align: to center;} 
+
+.greybox {
+	background: #f2f2f2;
+	border-top: 2px solid #CCC;
+	border-bottom: 2px solid #CCC;
+	text-align: center;
+	padding: 5px 20px;
+	}
+	
+.greybox_narrow {
+	background: #f2f2f2;
+	border-top: 2px solid #CCC;
+	border-bottom: 2px solid #CCC;
+	text-align: center;
+	padding: 5px 20px;
+	width:56%; float:right;}
+
+.thumb_left {float: left; width: 35%;}
+.thumb_clear{clear: both;}
+
+/* end additions */
+
+/* Typography */
+
+#page h1, #header .description, #page h2, #page h3, #page h4, #page h5 {
+	font-family: Georgia, 'Times New Roman', serif;
+}
+
+#header ul.menu {
+	font-size: 1.2em;
+}
+
+#page #primary .entry-content,
+body.single #primary .k2-asides .entry-content {
+	font-size: 1.3em;
+	color: #444;
+	line-height: 1.6em;
+}
+
+.comments #commentlist .comment-content {
+	line-height: 1.6em;
+}
+
+#primary .entry-content h4 {
+	font-size: 1.6em;
+}
+
+#page .secondary {
+	font-size: 1.2em;
+}
+
+#page .secondary .sb-asides p {
+	line-height: 1.6em;
+}
+
+#footer small {
+	font-size: 1em;
+}
+
+
+/* Static Width */
+
+body {
+	margin: 10px 0;
+	background: #657585;
+}
+
+#page {
+	width: 870px;
+ 	background: transparent url('images/static_page_bg.jpg') repeat-y;
+	border: none;
+	padding: 0;
+}
+
+
+/* Header */
+
+#header {
+	height: 195px;
+	background: transparent url('images/static_header_bg.jpg') no-repeat top;
+}
+
+#header h1 {
+	padding: 65px 0 0 50px;
+	text-shadow: 2px 2px 5px black;
+}
+
+#header .description {
+	font-size: 1.4em;
+	margin-left: 50px;
+	display: inline;
+	font-style: italic;
+	text-shadow: 2px 2px 2px black;
+}
+
+
+/* Header Menu */
+
+ul.menu {
+	top: 15px;
+	left: 40px;
+	height: 3em;
+	padding: 0;
+}
+
+ul.menu li {
+	float: left;
+	margin: 0 1px;
+	padding: 0 0 0 10px;
+}
+
+ul.menu li a {
+	float: left;
+	display: block;
+	padding: 1em 10px 5px 0px;
+	margin: 0 0 10px;
+	font-weight: normal;
+}
+
+ul.menu li:hover {
+	background: url('images/menu-hover-left.png') no-repeat bottom left;
+}
+
+ul.menu li a:hover, ul.menu li:hover > a {
+	color: #fff !important;
+	background: url('images/menu-hover-right.png') no-repeat bottom right;
+	padding-top: 1.5em;
+	margin-bottom: 0;
+}
+
+ul.menu li.current_page_item {
+	background: url('images/menu-selected-left.png') no-repeat bottom left;
+}
+
+ul.menu li.current_page_item a, ul.menu li.current_page_item a:hover {
+	color: #333 !important;
+	background: url('images/menu-selected-right.png') no-repeat bottom right;
+	font-weight: bold;
+	padding-top: 1.5em;
+	margin-bottom: 0;
+}
+
+.admintab {
+	position: relative;
+}
+
+
+/* Content */
+
+#page div.content {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Primary */
+
+#page #primary {
+	width: 545px;
+	padding: 0;
+	margin: -40px 0 0 25px;
+}
+
+#page h2 {
+	margin-top: 40px;
+}
+
+#page blockquote {
+	background-color: transparent;
+}
+
+#page .k2-asides blockquote {
+	margin: 1em 0;
+	padding: 0 0 0 20px;
+	background: url('images/quote-small.gif') left top no-repeat;
+}
+
+
+/* Metadata */
+
+.chronodata
+{
+	color: #777;
+	background: url('icons/calendar.gif') left center no-repeat;
+}
+
+.commentslink {
+	background: url('icons/comments.gif') left center no-repeat;
+}
+
+
+/* Sidebar */
+
+#page div.secondary {
+	width: 250px;
+	margin: -40px 25px 0 0;
+	padding: 0;
+	float: right;
+}
+
+div.secondary div {
+	position: relative;
+}
+
+div.secondary #searchreset {
+	width: 16px;
+	height: 16px;
+	background: url('icons/delete.gif') center center;
+}
+
+.sb-pagemenu li:before,
+.sb-latest li:before,
+.sb-categories li:before,
+.sb-months li:before,
+.sb-links ul li ul li:before {
+	content: "\00BB \0020";
+}
+
+.sb-pagemenu .current_page_item a {
+	font-weight: bold;
+}
+
+.sb-pagemenu ul {
+	margin-bottom: 1em;
+}
+
+
+/* Footer */
+
+#footer {
+	width: 870px;
+	padding: 0 0 25px 0;
+	margin: 0 auto;
+ 	background: transparent url('images/static_footer_bg.jpg') bottom;
+}
+
+#footer small
+{
+	display: block;
+	margin: 0;
+	padding-top: 25px;
+	background: transparent url('images/static_footer_top.jpg') no-repeat;
+	color: #666;
+}
+
+#footer small a {
+	color: #333;
+	font-weight: bold;
+	border: none;
+	text-decoration: none;
+}
+
+#footer small a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+
+/* Comments */
+.comments #commentlist {
+	margin: 20px 0;
+	padding: 0;
+}
+
+.comments #commentlist li.bypostauthor {
+	background: #e4e9ef;
+	border: 1px solid #d2d7dd;
+	border-top: 4px solid #d2d7dd;
+	height: 100%;
+}
+
+.comments #commentlist li a img.gravatar {
+	float: right;
+	border: 1px solid #999;
+	padding: 3px;
+	background: #fff;
+}
+
+.comments #commentlist li a:hover img.gravatar {
+	border: 3px solid #27d;
+	padding: 1px;
+}
+
+.comments #commentlist .comment-meta {
+	color: #777;
+	background: url('icons/calendar.gif') left center no-repeat;
+}
+
+.comments #pinglist {
+	background: #e4e9ef;
+	border: 1px solid #d2d7dd;
+	border-top: 4px solid #d2d7dd;
+	margin-bottom: 20px;
+}
+
+.comments #pinglist li {
+	margin-left: 52px;
+}
+
+.comments #pinglist li span.favatar img {
+	margin-left: -42px;
+	max-width: 32px;
+}
+
+
+/* Paged Navigation */
+
+div.navigation {
+	width: 510px;
+	margin: 0 auto;
+	padding: 8px 0px 12px;
+	background: url('images/navigation_bg.png') no-repeat bottom;
+	position: relative;
+}
+
+div.navigation span {
+	display: none;
+}
+
+div.navigation a {
+	color: #ccc;
+}
+
+div.navigation a:hover {
+	color: #fff;
+}
+
+div.navigation .left {
+	margin-left: 16px;
+	padding-left: 24px;
+	background: url('icons/book_previous.png') left center no-repeat;
+	width: auto;
+}
+
+div.navigation .right {
+	margin-right: 16px;
+	padding-right: 24px;
+	background: url('icons/book_next.png') right center no-repeat;
+	width: auto;
+}
+
+div.comments div.navigation {
+	display: none;
+}
+
+
+/* Rolling Archives */
+
+#current-content #rollingarchives,
+#dynamic-content #nested_rollingarchives {
+	margin: 0;
+	padding: 0;
+	background: url('images/navigation_bg.png') no-repeat bottom;
+	height: 36px;
+}
+
+#current-content #rollingarchives,
+#current-content #rollnotices,
+#dynamic-content #nested_rollingarchives,
+#dynamic-content #nested_rollnotices {
+	border: none;
+}
+
+#current-content #rollnavigation,
+#dynamic-content #nested_rollnavigation {
+	width: 510px;
+	margin: 0 auto;
+	padding: 4px 4px 8px;
+	position: relative;
+}
+
+#current-content #rollnavigation a,
+#dynamic-content #nested_rollnavigation a {
+	color: #ccc;
+}
+
+#current-content #rollprevious,
+#current-content #rollnext,
+#current-content #rollpages,
+#current-content #rollload,
+#dynamic-content #nested_rollprevious,
+#dynamic-content #nested_rollnext,
+#dynamic-content #nested_rollpages,
+#dynamic-content #nested_rollload {
+	width: auto;
+	color: #ccc;
+}
+
+#current-content #rollpages,
+#dynamic-content #nested_rollpages {
+	left: 85px;
+	text-align: left;
+}
+
+#current-content #rollload,
+#dynamic-content #nested_rollload {
+	right: 85px;
+	text-align: right;
+}
+
+#current-content #rollprevious,
+#dynamic-content #nested_rollprevious {
+	left: 16px;
+	padding-left: 24px;
+	background: url('icons/book_previous.png') left center no-repeat;
+}
+
+#current-content #rollnext,
+#dynamic-content #nested_rollnext {
+	right: 16px;
+	padding-right: 24px;
+	background: url('icons/book_next.png') right center no-repeat;
+}
+
+#current-content #rollnext:hover,
+#current-content #rollprevious:hover,
+#dynamic-content #nested_rollnext:hover,
+#dynamic-content #nested_rollprevious:hover {
+	color: #fff;
+	background-color: transparent;
+}
+
+#current-content #rollnext span,
+#current-content #rollprevious span,
+#dynamic-content #nested_rollnext span,
+#dynamic-content #nested_rollprevious span {
+	display: none;
+}
+
+#current-content #pagetrackwrap,
+#dynamic-content #nested_pagetrackwrap {
+	top: 4px;
+	left: 180px;
+	width: 170px;
+	height: 24px;
+	background: url('images/slider-bg-left.png') left center no-repeat;
+	position: absolute;
+}
+
+#current-content #trimmer,
+#dynamic-content #nested_trimmer {
+	top: 4px;
+	right: 85px;
+	width: 60px;
+	height: 24px;
+}
+
+#current-content #trimmertrackwrap,
+#dynamic-content #nested_trimmertrackwrap {
+	margin: 0 auto;
+	background: url('images/slider-bg-left.png') left center no-repeat;
+}
+
+#current-content #pagetrack,
+#dynamic-content #nested_pagetrack,
+#current-content #trimmertrack,
+#dynamic-content #nested_trimmertrack {
+	height: 24px;
+	background: url('images/slider-bg-right.png') right center no-repeat;
+}
+
+#current-content #pagehandle,
+#dynamic-content #nested_pagehandle,
+#current-content #trimmerhandle,
+#dynamic-content #nested_trimmerhandle {
+	width: 15px;
+	height: 24px;
+	background: url('images/slider-handle.png') center center no-repeat;
+	cursor: pointer;
+}
+
+
+/* Miscellaneous */
+
+span.readmore {
+	display: block;
+	margin: 1em 15px 0px 0px;
+	padding: 2px 0px 2px 20px ;
+	background: url('icons/page_white_go.gif') left center no-repeat;
+}
+
+.alert {
+	background: #FFF6BF url('icons/exclamation.gif') 8px 8px no-repeat;
+	border: 1px solid #FFD324;
+	border-top: 4px solid #FFD324;
+	text-align: left;
+	margin: 10px auto;
+	padding: 5px 20px 5px 32px;
+}
+
+.noteworthy {                  
+	background: url('icons/star.gif') no-repeat right center;
+}
+
+
+/* FlickrRSS */
+
+.sb-flickr div a img {
+	border: 1px solid #999;
+}
+
+.sb-flickr div a:hover img {
+	border: 3px solid #27d;
+	padding: 1px;
+}
+
+/*
+	"Once in a blue moon there is a blue sky. I wear blue jeans and fly my blue kite.
+	It hangs like a bluebird until the wind dies and then the tears pour out of my blue eyes.
+	If it is your birthday we'll bake a blue cake and then we'll eat it off my blue plates.
+	Because kid I don't know much about you but I like you because you're true blue."
+
+	-Bright Eyes
+*/

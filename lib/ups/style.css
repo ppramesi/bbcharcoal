@@ -1,0 +1,242 @@
+/**
+  Theme Name: Naked
+  Theme URI: http://code.google.com/p/wordpress-naked/
+  Version: 1.2
+  Author: Siftware
+  Author URI: http://www.siftware.co.uk
+  Tags: simple, clean, fixed width, widget-ready, widgets, right sidebar, two columns, valid XHTML, valid CSS, blank-slate
+  Licence: LGPL
+  
+  Description: A theme created with developers in mind which should enable rapid WP reskinning. The CSS is minimal but consistent cross-browser, there are a couple of SEO tweaks and the page navigation works sensibly but can modified easily.
+
+  The CSS that follows is the bare minimum of styling for a two column, fixed width and centred layout that should be
+  consistent in 'modern browsers'
+*/
+
+html {
+	overflow-y: scroll;
+	background-color:#000;
+}
+body { 
+	width: 920px;
+	background-color:#000;
+	text-align:center;
+	margin:0px auto;
+	font-family: Century Gothic,"Trebuchet MS",sans-serif;
+	font-size: 10pt;
+}
+h1, h2, h3 {
+	margin:0;
+	padding:0;
+}
+#canvas {
+	text-align:left;
+	margin-top:30px;
+	width:920px;
+}
+#header-logo{
+	width:170px;
+	text-align:center;
+}
+#header-banner {
+	padding-right: 30px;
+	text-align:right;
+	width:750px;
+}
+#canvas img{
+	 border:0px;
+}
+#nav {
+	padding: 20px 0px;
+	width:100%;
+	text-align:center;
+}
+#nav-list {
+	width:100%;
+	height:50xp;
+	display: inline;
+	font-family: Century Gothic, "Trebuchet MS", sans-serif ;
+	padding:0;
+	margin:0;
+}
+#nav-list li {
+	display: inline;
+	padding: 0px 30px;
+}
+#nav-list li a{
+	color:#FFF;
+	text-decoration:none;
+	font-size:14pt;
+}	
+#nav-list li a:hover{
+	color:#ec2024;
+	text-decoration:none;
+	font-size:14pt;
+}
+
+/* 
+LEFT CONTENT
+---------------------
+*/
+#sidebar {
+	width:175px;
+}
+#homepage-follow-us {
+	background-color:#ec2024;
+	text-align:center;
+}
+#homepage-follow-us img{
+	padding:10px 10px 5px 10px;
+}
+#homepage-specials {
+	background-color:#FFF;
+	height: 175px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#homepage-blog {
+	background-color:#FFF;
+	margin-top:20px;
+	font-size: 8pt;
+	overflow: hidden;
+}
+#homepage-blog-content {
+	margin: 5px 10px 10px 10px;
+}
+#homepage-blog-content h2{
+	margin: 10px 0px;
+}
+#homepage-blog-content a{
+	text-decoration: none;
+	color: #555;
+}
+#blog-header {
+	text-align: center;
+	font-size: 12pt;
+	border-bottom:1px dotted #BBB;
+	color: #EC2024;
+	font-weight: bold;
+}
+#left-content {
+	width:175px;
+}
+
+/*
+RIGHT CONTENT
+*/
+#page {
+	width:100%;
+	background-color:#FFF;
+}
+#page-content {
+	padding:0px 5px 20px 5px;
+}
+#page-content a {
+	color: #EC2024;
+	text-decoration: none;
+}
+#blog-content {
+	margin: 0px 15px 10px 15px;
+	color: #333;
+}
+#blog-content a {
+	color: #EC2024;
+	text-decoration: none;
+}
+#page-content a:hover {
+	color: #EC2024;
+	text-decoration: underline;
+}
+#blog-header-image {
+	margin: 0px 10px 10px 10px;
+}
+#right-content {
+	padding-left:25px;
+}
+#specials {
+	height:275px;
+	width:200px;
+	float:right;
+	margin:10px 20px 20px 20px;
+	background-color:#000;
+	clear:both;
+}
+#footer-links {
+	color: #FFF;
+	font-size: 10pt;
+	padding: 3px 0px 10px 0px;
+	margin: 0 auto;
+	text-align: center;
+}
+#footer-links ul{
+	padding: 0;
+	margin: 0;
+}
+#footer-links li{
+	display: inline;
+	margin-left: 5px;
+}
+#footer-links a{
+	color: #FFF;
+}
+#footer-links a:hover{
+	color: #EC2024;
+}
+
+.bl {background: url(../../../../images/bottomleft.gif) left bottom no-repeat;height:5px;}
+.br {background: url(../../../../images/bottomright.gif) right bottom no-repeat;height:5px;}
+.tl {background: url(../../../../images/topleft.gif) 0 0 no-repeat;height:5px;}
+.tr {background: url(../../../../images/topright.gif) right top no-repeat;height:5px;} 
+
+.bl-red {background: url(../../../../images/bottom_left_red.gif) left bottom no-repeat;height:5px;}
+.br-red {background: url(../../../../images/bottom_right_red.gif) right bottom no-repeat;height:5px;}
+.tl-red {background: url(../../../../images/top_left_red.gif) 0 0 no-repeat;height:5px;}
+.tr-red {background: url(../../../../images/top_right_red.gif) right top no-repeat;height:5px;} 
+
+.post-break {
+	width: 100%;
+	height:2px;
+	background-color:#EC2024;
+	margin: 40px 0px 30px 0px;
+}
+textarea {
+	width: 400px;
+	height: 100px;
+}
+.red-link-1 {
+	color:#EC2024;
+	text-decoration: none;
+	font-size: 12pt;
+}
+.content-1 {
+	margin: 10px; 
+	color: #333;
+	line-height:1.5em
+}
+.image-box {
+	margin: 10px;
+	border: 1px solid #CCC;
+}
+.big-red {
+	color: #ec2024; 
+	font-size: 20pt; 
+	font-family: verdana;
+	font-weight: bold;
+}
+
+#entry-page {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 50px;
+	color: #FFF;
+}
+#entry-page a {
+	text-decoration: underline;
+	color: #ec2024;
+}
+#page-banner {
+	background: url(../../../media/all-things-adult-austin-banner.gif);
+}
+#page-logo {
+	background: url(../../../media/all-things-adult-austin-logo.gif);
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head profile="http://gmpg.org/xfn/11"><title>McAleavy.org</title>
+
+
+
+	
+
+	<link rel="stylesheet" type="text/css" media="screen" href="Help_files/style.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="Help_files/trueblue.css">
+	
+	<style type="text/css">
+			#header {background: url("Gone_files/static_header_bg_electro.jpg");}
+			#header h1 a, #header .description {color: #ffffff;}
+	</style>
+
+	<style type="text/css">.g2_column {margin: 0px 1px 0px 12px;width: 738px}</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="Help_files/theme.css">
+
+	<style type="text/css">
+		.content { width: 800px; }
+		.gallery-thumb { width: 180px; height: 180px; }
+		.gallery-album { height: 210px; }
+	</style>
+	<link rel="stylesheet" href="Help_files/DMcA.css" type="text/css" media="screen"></head>
+	<body linkifymax="0" linkifycurrent="0" linkifytime="18" linkified="0" linkifying="true" class="wordpress k2 y2007 m05 d08 h08 home loggedin">
+
+<div id="page">
+
+	<div id="header">
+		<h1><a href="http://mcaleavy.org/">McAleavy.org</a></h1>
+		<p class="description">Point glass end at pretty things. Press button.</p>
+	</div>
+
+	<hr>
+	<div id="content" class="g2_column">
+		<div id="gallery" class="gecko">
+			<div class="header"></div>
+			<div class="content">
+
+	
+<div class="entry-content" style="align: left; margin-left: 10%; margin-right: 10%; font-size: 1.4em; line-height: 1.4em; color: #444;">
+<h2>Domain Mirror Plugin Help</h2><br>
+<p><a href="http://mcaleavy.org/code/domain-mirror/" target="_blank">Plugin Homepage</a> | <a href="http://mcaleavy.org" target="_blank">Author Homepage</a></p>
+<p>If you have more than one domain and want to point both of them at
+the same Wordpress installation, you’ll find that it doesn’t really
+work very well. Wordpress creates it’s own internal URLs based on the
+settings in General Options. This Plugin allows multiple domains to be
+configured within Wordpress and updates the Weblog Title, Wordpress
+Address URL and Blog Address URL on-the-fly based on the value of
+$_SERVER[’SERVER_NAME’].</p>
+<p>This allows one installation to show different URL paths, tagline and blog title for each domain.</p>
+<p>What it won’t do is make one domain appear to be two, or change your
+domain configuration. You need to do that yourself, or have your
+hosting provider do it for you.</p>
+<p>To see it in action, you can access this site via <a href="http://mcaleavy.org/">http://McAleavy.org</a> or <a href="http://lightpainting.org/">http://LightPainting.org</a>. Both point to a single Wordpress installation, running on a single database.</p>
+<h3>New in v1.1</h3>
+<ol>
+<li>You can now have a separate tagline on each domain.</li>
+<li>The Admin screen has a button to copy in the current Wordpress configuration to save on typing.</li>
+<li>The Admin screen has buttons to clear content from whole domains and indivudual lines.</li>
+</ol>
+<h3>Installation</h3>
+<ol>
+<li>Download and unpack the archive. If you downloaded the plugin from
+my site it will unpack to a directory named “AA-DomainMirror”, but if
+you got it from the Wordpress plugin repository it will unpack to the
+direcotory “domain-mirror”. Either will work, but you may need to
+rename the latter to “AA-DomainMirror” if you have problems with some
+other plugins not seeing the changes. See below.</li>
+<li>Copy the whole <b>AA-DomainMirror</b> directory to <b>wp-content/plugins/</b> If possible, don’t change the name of the directory, as the <b>AA-</b> at the start is a <i>horrible</i>
+hack to ensure that Wordpress loads this plugin first. This is required
+as any plugin loaded before it won’t be able to see the changes it
+makes, so will behave as if it’s still on the default domain. This
+puzzled me for quite a while.</li>
+<li>Go to your <b>Plugins</b> page and activate <b>Domain Mirror</b>.</li>
+<li>Go to the <b>Options -&gt; Domain Mirror</b> page and configure as outlined below.</li>
+</ol>
+<h3>Upgrade</h3>
+<p>Overwrite the old version with the new version.</p>
+<h3>Usage</h3>
+<p>When enabled, Domain Mirror will change the values of Weblog Title,
+Tagline, Wordpress Address and Blog Address automatically. Where you
+have hard-coded the site name or a site URL into a post or page you
+should replace that entry with one of the tags provided. See below.</p>
+<h3>Configuration</h3>
+<div style="float: left; width: 55%;">
+<div class="myinlinepictureleft" style="width: 258px;">
+<div class="myinlineborder" style="width: 258px;"><a rel="lightbox" href="Help_files/OptionsBefore.jpg" title=""><img class="myinlinepictureimg" src="Help_files/tmb_OptionsBefore.jpg" alt="" title="" height="100" width="258"></a></div>
+</div>
+</div>
+<div><br>Your existing Wordpress configuration should be left as it is.
+This will not be changed unless you press Save on this page when viewed
+from a domain other than the default. See below.</div>
+<div style="clear: left;"></div>
+<div style="float: left; width: 35%;">
+<div class="myinlinepictureleft" style="width: 145px;">
+<div class="myinlineborder" style="width: 145px;"><a rel="lightbox" href="Help_files/DomainsBefore.jpg" title=""><img class="myinlinepictureimg" src="Help_files/tmb_DomainsBefore.jpg" alt="" title="" height="100" width="145"></a></div>
+</div>
+</div>
+<div><br>On initial activation, the Domain Mirror options
+screen will display a default blank entry. This default is defined in
+conf.inc.php - which can be edited to set different defaults. The post
+tags used to display the current setting of these fields in posts or
+pages are shown to the right. Add this text to a post or page and it
+will be replaced by it’s value for the current domain. This allows such
+posts to display properly from any configured domain.</div>
+<div style="clear: left;"></div>
+<div style="float: left; width: 35%;">
+<div class="myinlinepictureleft" style="width: 145px;">
+<div class="myinlineborder" style="width: 145px;"><a rel="lightbox" href="Help_files/FirstDomain.jpg" title=""><img class="myinlinepictureimg" src="Help_files/tmb_FirstDomain.jpg" alt="" title="" height="100" width="145"></a></div>
+</div>
+</div>
+<div><br>Fill in the settings for the current domain, or press the <i>Get Current Domain</i>
+button to get the values from the database. This is recommended because
+the General Options page will show the Domain Mirror configured
+settings when accessed from another domain. If you then press Save on
+that page those options will be written to the Wordpress settings,
+overwriting the original settings. If you don’t have those settings in
+Domain Mirror, they will be lost and the original domain will not
+function properly until they are re-entered. If Save is not pressed,
+the original values will be retained and will be used again when the
+plugin is disabled.</div>
+<div style="clear: left;"></div>
+<div style="float: left; width: 35%;">
+<div class="myinlinepictureleft" style="width: 161px;">
+<div class="myinlineborder" style="width: 161px;"><a rel="lightbox" href="Help_files/ChangesSaved.jpg" title=""><img class="myinlinepictureimg" src="Help_files/tmb_ChangesSaved.jpg" alt="" title="" height="100" width="161"></a></div>
+</div>
+</div>
+<div><br>Click the Save button to record the changes. The screen will reload and display the Changes Saved banner.</div>
+<div style="clear: left;"></div>
+<div style="float: left; width: 35%;">
+<div class="myinlinepictureleft" style="width: 139px;">
+<div class="myinlineborder" style="width: 139px;"><a rel="lightbox" href="Help_files/NewBlankDomain.jpg" title=""><img class="myinlinepictureimg" src="Help_files/tmb_NewBlankDomain.jpg" alt="" title="" height="100" width="139"></a></div>
+</div>
+</div>
+<div><br>To add another domain, click the Add New Domain button. The page will refersh with a 2nd blank domain.</div>
+<div style="clear: left;"></div>
+<div style="float: left; width: 35%;">
+<div class="myinlinepictureleft" style="width: 135px;">
+<div class="myinlineborder" style="width: 135px;"><a rel="lightbox" href="Help_files/SecondDomain.jpg" title=""><img class="myinlinepictureimg" src="Help_files/tmb_SecondDomain.jpg" alt="" title="" height="100" width="135"></a></div>
+</div>
+</div>
+<div><br>Fill in the details for the 2nd domain, and click Save Changes.</div>
+<div style="clear: left;"></div>
+<div style="float: left; width: 40%;">
+<div class="myinlinepictureleft" style="width: 191px;">
+<div class="myinlineborder" style="width: 191px;"><a rel="lightbox" href="Help_files/SiteBefore.jpg" title=""><img class="myinlinepictureimg" src="Help_files/tmb_SiteBefore.jpg" alt="" title="" height="100" width="191"></a></div>
+</div>
+</div>
+<div><br>Now, when viewed using the first domain, the site remains unchanged.</div>
+<div style="clear: left;"></div>
+<div style="float: left; width: 40%;">
+<div class="myinlinepictureleft" style="width: 177px;">
+<div class="myinlineborder" style="width: 177px;"><a rel="lightbox" href="Help_files/SiteAfter.jpg" title=""><img class="myinlinepictureimg" src="Help_files/tmb_SiteAfter.jpg" alt="" title="" height="100" width="177"></a></div>
+</div>
+</div>
+<div><br>When viewed using the second domain, the site appears as if configured for that domain.</div>
+<div style="clear: left;"></div>
+<div style="float: left; width: 55%;">
+<div class="myinlinepictureleft" style="width: 259px;">
+<div class="myinlineborder" style="width: 259px;"><a rel="lightbox" href="Help_files/OptionsAfter.jpg" title=""><img class="myinlinepictureimg" src="Help_files/tmb_OptionsAfter.jpg" alt="" title="" height="100" width="259"></a></div>
+</div>
+</div>
+<div><br>The General Options screen, when accessed from the new domain,
+now displays the details for that domain. These options, however, are
+coming from the Domain Mirror configuration and not from the Wordpress
+settings. As noted before, if save is pressed on this page these
+options will be written to the Wordpress settings, overwriting the
+original settings. If you don’t have those settings in Domain Mirror,
+they will be lost and the original domain will not function properly
+until they are re-entered.</div>
+<div style="clear: left;"></div>
+<div>To delete a domain, press the Delete Domain button
+and it will be removed from the page. This change will be written to
+the database when you next press Save Changes. If you delete all of the
+entries in Domain Mirror it will return to it’s default settings. If
+you wish to alter these defaults you can edit the file <b>config.inc.php</b> in the <b>AA-DomainMirror</b> directory. The “X” buttons on each line can be used to clear the contents of that line and the <i>Clear All</i> button can be used to clear the contents of that domain setting. Again, pressing <i>Save Changes</i> is rquired to make these changes permanent.</p>
+<p class="end_blurb">DaveMc, April 2007.</p></div>
+<br/>											
+<br/>											
+<br/>	
+<hr>
+<br/>	
+</div>	
+	
+	
+			</div>
+		</div>
+	</div>	<div class="clear"></div>
+</div> <!-- Close Page -->
+
+<hr>
+
+</body></html>

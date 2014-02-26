@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<AccessRequest xml:lang="en-US">
+	<AccessLicenseNumber>DC6EB9BFBAB1DDB0</AccessLicenseNumber>
+	<UserId>JoeBot</UserId>
+
+	<Password>joebot</Password>
+</AccessRequest> 
+<?xml version="1.0" encoding="utf-8"?>
+<ShipmentConfirmRequest>
+  <Request>
+    <TransactionReference>
+      <CustomerContext>ups-php</CustomerContext>
+      <XpciVersion>1.0001</XpciVersion>
+    </TransactionReference>
+
+    <RequestAction>ShipConfirm</RequestAction>
+    <RequestOption>nonvalidate</RequestOption>
+  </Request>
+  <Shipment>
+    <Shipper>
+      <Name>B&amp;B Charcoal</Name>
+      <AttentionName></AttentionName>
+
+      <ShipperNumber>0Y032A</ShipperNumber>
+      <Address>
+        <AddressLine1>4710 Jeddo Rd</AddressLine1>
+        <City>Flatonia</City>
+        <StateProvinceCode>TX</StateProvinceCode>
+        <PostalCode>78941</PostalCode>
+
+      </Address>
+    </Shipper>
+    <ShipTo>
+      <CompanyName>Test Person 4</CompanyName>
+      <AttentionName></AttentionName>
+      <PhoneNumber>
+        <StructuredPhoneNumber>
+          <PhoneDialPlanNumber></PhoneDialPlanNumber>
+
+          <PhoneLineNumber></PhoneLineNumber>
+          <PhoneExtension></PhoneExtension>
+        </StructuredPhoneNumber>
+      </PhoneNumber>
+      <Address>
+        <AddressLine1>9708 RESERVOIR CT</AddressLine1>
+        <City>AUSTIN</City>
+        <StateProvinceCode>TX</StateProvinceCode>
+
+        <CountryCode>US</CountryCode>
+        <PostalCode>78754</PostalCode>
+        <ResidentialAddress></ResidentialAddress>
+      </Address>
+    </ShipTo>
+    <Service>
+      <Code>01</Code>
+
+      <Description>UPS Next Day Air</Description>
+    </Service>
+    <PaymentInformation>
+      <Prepaid>
+        <BillShipper>
+          <CreditCard>
+            <Type>06</Type>
+            <Number>4111111111111111</Number>
+
+            <ExpirationDate>101911</ExpirationDate>
+          </CreditCard>
+        </BillShipper>
+      </Prepaid>
+    </PaymentInformation>
+    <ShipmentServiceOptions>
+      <OnCallAir>
+        <PickupDetails>
+
+          <PickupDate>20110124</PickupDate>
+          <EarliestTimeReady>0945</EarliestTimeReady>
+          <LatestTimeReady>1445</LatestTimeReady>
+          <ContactInfo>
+            <Name>TravisKainer</Name>
+            <PhoneNumber>3618653444</PhoneNumber>
+
+          </ContactInfo>
+        </PickupDetails>
+      </OnCallAir>
+    </ShipmentServiceOptions>
+    <Package>
+      <PackagingType>
+        <Code>02</Code>
+      </PackagingType>
+
+      <Dimensions>
+        <UnitOfMeasurement>
+          <Code>IN</Code>
+        </UnitOfMeasurement>
+        <Length>36</Length>
+        <Width>20</Width>
+        <Height>12</Height>
+
+      </Dimensions>
+      <PackageWeight>
+        <Weight>45</Weight>
+      </PackageWeight>
+      <ReferenceNumber>
+        <Code>02</Code>
+        <Value>1234567</Value>
+
+      </ReferenceNumber>
+      <PackageServiceOptions>
+        <InsuredValue>
+          <CurrencyCode>USD</CurrencyCode>
+          <MonetaryValue>45</MonetaryValue>
+        </InsuredValue>
+      </PackageServiceOptions>
+    </Package>
+
+    <Package>
+      <PackagingType>
+        <Code>02</Code>
+      </PackagingType>
+      <Dimensions>
+        <UnitOfMeasurement>
+          <Code>IN</Code>
+        </UnitOfMeasurement>
+
+        <Length>36</Length>
+        <Width>20</Width>
+        <Height>12</Height>
+      </Dimensions>
+      <PackageWeight>
+        <Weight>18</Weight>
+      </PackageWeight>
+
+      <ReferenceNumber>
+        <Code>02</Code>
+        <Value>1234567</Value>
+      </ReferenceNumber>
+      <PackageServiceOptions>
+        <InsuredValue>
+          <CurrencyCode>USD</CurrencyCode>
+
+          <MonetaryValue>18</MonetaryValue>
+        </InsuredValue>
+      </PackageServiceOptions>
+    </Package>
+  </Shipment>
+  <LabelSpecification>
+    <LabelPrintMethod>
+      <Code>GIF</Code>
+
+    </LabelPrintMethod>
+    <HTTPUserAgent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13</HTTPUserAgent>
+    <LabelImageFormat>
+      <Code>GIF</Code>
+    </LabelImageFormat>
+  </LabelSpecification>
+</ShipmentConfirmRequest>

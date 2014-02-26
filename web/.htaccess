@@ -1,0 +1,201 @@
+DirectoryIndex index.php
+
+# BEGIN WPSuperCache
+# END WPSuperCache
+
+# BEGIN WordPress
+
+## Block known bad user agents, bots and potentially malicious request methods
+## The following list may include bots that no longer exist or that are not a problem for your site.
+## The list will always be incomplete and it is therefore wise to
+## follow discussions on one of the many "security" mailing lists or on a forum
+## such as http://www.webmasterworld.com/search_engine_spiders/
+## It is also unwise to rely on this list as your ONLY security mechanism.
+
+## White-list allowed sites
+## Better to use IP addresses than {REMOTE_HOST} name
+## RewriteCond %{REMOTE_HOST} !wordpress\.org$ [NC]
+## White-list WordPress and Automatic servers
+RewriteCond %{REMOTE_ADDR} !216\.65\.19\.4
+RewriteCond %{REMOTE_ADDR} !64\.34\.174\.135
+RewriteCond %{REMOTE_ADDR} !64\.34\.177\.159
+RewriteCond %{REMOTE_ADDR} !66\.135\.48\.
+RewriteCond %{REMOTE_ADDR} !69\.0\.231\.112
+RewriteCond %{REMOTE_ADDR} !69\.170\.134\.
+RewriteCond %{REMOTE_ADDR} !69\.174\.248\.140
+RewriteCond %{REMOTE_ADDR} !72\.233\.104\.124
+RewriteCond %{REMOTE_ADDR} !72\.233\.104\.98
+RewriteCond %{REMOTE_ADDR} !72\.233\.56\.138
+RewriteCond %{REMOTE_ADDR} !72\.233\.56\.139
+RewriteCond %{REMOTE_ADDR} !72\.233\.69\.14
+RewriteCond %{REMOTE_ADDR} !74\.200\.244\.
+RewriteCond %{REMOTE_ADDR} !74\.200\.247\.188
+RewriteCond %{REMOTE_ADDR} !76\.74\.159\.137
+RewriteCond %{REMOTE_ADDR} !76\.74\.248\.
+RewriteCond %{REMOTE_ADDR} !76\.74\.254\.126
+## White list Disqus
+RewriteCond %{REMOTE_ADDR} !75\.126\.109\.204
+RewriteCond %{REMOTE_ADDR} !74\.86\.190\.242
+RewriteCond %{REMOTE_ADDR} !173\.192\.61\.226
+## White-list Livefyre
+RewriteCond %{REMOTE_ADDR} !50.19.5.163
+# White-list localhost
+RewriteCond %{HTTP_HOST} !^(127\.0\.0\.1|localhost) [NC]
+## Block bad user agents
+RewriteCond %{HTTP_USER_AGENT} BlackWidow [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Bot\ mailto:craftbot@yahoo.com [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ChinaClaw [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Custo [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} DISCo [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Download\ Demon [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} EirGrabber [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} EmailSiphon [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} EmailWolf [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Express\ WebPictures [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ExtractorPro [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} EyeNetIE [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} FlashGet [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} GetRight [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} GetWeb! [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Go!Zilla [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Go-Ahead-Got-It [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} GrabNet [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Grafula [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} HMView [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} HTTrack [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} HTTrack [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Image\ Stripper [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Image\ Sucker [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Indy\ Library [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Indy\ Library [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} InterGET [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Internet\ Ninja [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} JOC\ Web\ Spider [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} JetCar [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} LeechFTP [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} MIDown\ tool [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Mass\ Downloader [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Mister\ PiX [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Navroad [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} NearSite [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} NetAnts [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} NetSpider [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} NetZIP [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Net\ Vampire [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Octopus [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Offline\ Explorer [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Offline\ Navigator [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} PageGrabber [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Papa\ Foto [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ReGet [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} RealDownload [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} SiteSnagger [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} SmartDownload [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} SuperBot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} SuperHTTP [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Surfbot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Teleport\ Pro [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} TurnitinBot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} VoidEYE [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WWWOFFLE [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebAuto [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebCopier [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebFetch [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebGo\ IS [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebLeacher [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebReaper [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebSauger [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebStripper [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebWhacker [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebZIP [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Web\ Image\ Collector [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Web\ Sucker [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Website\ Quester [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Website\ eXtractor [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Widow [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Xaldon\ WebSpider [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Zeus [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} archiverloader [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} casper [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} clshttp [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} cmsworldmap [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} curl [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} diavol [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} dotbot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} eCatch [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} email [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} extract [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} flicky [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} grab [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} harvest [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} jakarta [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} java [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} kmccrew [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} larbin [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} libwww [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} miner [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} nikto [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} pavuk [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} pcBrowser [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} planetwork [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} pycurl [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} python [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} scan [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} skygrid [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} tAkeOut [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} wget [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} winhttp [NC]
+RewriteCond %{HTTP_REFERER} \.ru [NC,OR]
+RewriteCond %{HTTP_REFERER} \.cn [NC]
+## Note: The final RewriteCond must NOT use the [OR] flag.
+## Return 403 Forbidden error.
+RewriteRule .* - [F]
+
+## Protect sensitive files from client-side viewing.
+<FilesMatch "^(wp-config\.php|php\.ini|php5\.ini|install\.php|php\.info|readme\.html|bb-config\.php|\htaccess|readme\.txt|error_log|error\.log|PHP_errors\.log|\.svn)">
+ Deny from all
+</FilesMatch>
+
+<Limit GET HEAD POST>
+	order deny,allow
+	deny from .ru
+	deny from .cn
+</Limit>
+
+# protect xmlrpc
+<Files xmlrpc.php>
+	Order Deny,Allow
+	Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{SERVER_PORT} !111$
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} pallet-pricing
+RewriteCond %{HTTP_HOST} ^(www\.)?(.*)$ [NC]
+RewriteRule ^(.*)$ https://%2/$1 [R=301,L,QSA]
+
+RewriteRule ^charcoal.*products\.html?$ 	/products/ [R,L]
+RewriteRule ^printablelist\.html?$			/products/ 	[R,L]
+RewriteRule ^how_to_order\.html?$			/products/	[R,L]
+RewriteRule ^guest_book\.html?$			/products/  [R,L]
+RewriteRule ^history\.html?$				/products/  [R,L]
+
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+AuthName bbcharcoal.com
+AuthUserFile /mnt/stor9-wc2-dfw1/528353/528995/www.bbcharcoal.com/web/content/_vti_pvt/service.pwd
+AuthGroupFile /mnt/stor9-wc2-dfw1/528353/528995/www.bbcharcoal.com/web/content/_vti_pvt/service.grp

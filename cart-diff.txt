@@ -1,0 +1,7 @@
+model/cart.php diff and changes:
+
+line 934: removed country code since all of the orders are from America
+line 938-950: moved the pre existing live rate check to after the check for freight since freight needs new shipping quote every time
+line 971-1007: added for checking if it's freight, shipping quote request
+
+for complete diff check out http://www.diffchecker.com/jgi6z8gv (left old vs right new)

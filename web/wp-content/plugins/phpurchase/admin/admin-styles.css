@@ -1,0 +1,244 @@
+label.med {
+  display: inline-block;
+  width: 125px;
+  text-align: right;
+}
+
+input.long {
+  width: 300px;
+}
+
+span.label_desc,
+p.label_desc {
+  padding: 0px 0px 0px 130px;
+  margin: 0;
+  color: #757575;
+  font-style: italic;
+}
+span.label_desc {
+  padding: 2px 0px 2px 10px;
+}
+
+.PHPurchaseError {
+  background-color: #FEE;
+  border: 1px solid red;
+  padding: 5px 20px;
+}
+
+.PHPurchaseErrorField {
+  background-color: #FEE;
+  border: 1px solid #F75;
+  padding: 3px;
+}
+
+.PHPurchaseError h1 {
+  color: #CBB;
+}
+
+.PHPurchaseSuccess {
+  background-color: #EFE;
+  border: 1px solid green;
+  padding: 5px 20px;
+  margin-right: 30px;
+}
+
+.PHPurchaseSuccess h1 {
+  color: #BCB;
+}
+
+.settingHeading{
+  cursor:pointer;
+  clear:both;
+  padding:5px;
+  margin-right:15px;
+  background-color:#ddd;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px;
+}
+
+#PHPurchaseOrderViewTable tr th,
+#PHPurchaseOrderViewTable tr td {
+  vertical-align: top;
+  padding: 0px 5px !important;
+}
+
+.PHPurchaseMemberInfoBlock {
+  display: inline-block;
+  border: 1px solid #dcdcdc;
+  background-color: #f3f3f3;
+  padding: 5px;
+  margin: 0px 15px 15px 0px;
+  width: 280px;
+  height: auto; /* 85px; */
+  overflow: auto;
+  vertical-align: top;  
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px 5px 10px #cfcfcf;
+  -webkit-box-shadow: 5px 5px 10px #cfcfcf;
+}
+
+.PHPurchaseMemberInfoBlock p {
+  padding: 2px;
+  margin: 0px;
+  color: #656565;
+}
+
+.PHPurchaseLinkButton {
+  display: inline-block;
+  border: 1px solid #d3d3d3;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #EEE;
+  padding: 3px 5px;
+  text-decoration: none;
+  color: #777;
+  font-size: 11px;
+}
+
+/********************************************************
+ * Table css
+ ********************************************************/
+.PHPurchaseTableMed {
+  width: auto;
+  border: 0px;
+  border-collapse: collapse;
+}
+
+.PHPurchaseTableMed th,
+.PHPurchaseTableMed td {
+  margin: 0px;
+  text-align: left;
+  border: none;
+  padding: 3px 7px;
+}
+
+.PHPurchaseTableMed td {
+  border-top: 1px solid #CFCFCF;
+}
+
+.PHPurchaseTableMed td.canceled {
+  color: #858585;
+}
+
+
+.PHPurchaseActive    { color: #467A26 !important; }
+.PHPurchaseComplete  { color: #AEC980 !important; }
+.PHPurchaseOverdue   { color: #D26421 !important; }
+.PHPurchaseSuspended { color: #8D0109 !important; }
+.PHPurchaseCanceled  { color: #AAAAAA !important; text-decoration: line-through; }
+
+.PHPurchaseSuccessModal,
+.PHPurchaseErrorModal {
+	display: block;
+	position: fixed;
+	top: 45%;
+	left: 25%;
+	width: 300px;
+	height: auto;
+	padding: 5px 20px;
+	border: 3px solid green;
+	background-color: #EFE;
+	z-index:1002;
+	overflow: auto;
+	-moz-border-radius: 15px; 
+  -webkit-border-radius: 15px;
+  -moz-box-shadow: 5px 5px 10px #cfcfcf;
+  -webkit-box-shadow: 5px 5px 10px #cfcfcf;
+}
+
+.PHPurchaseErrorModal {
+	border: 3px solid red;
+	background-color: #FEE;
+	color: #744;
+}
+
+.adminHeaderBlock {
+  padding: 5px; 
+  margin-bottom: 35px; 
+  background-color: #EEE; 
+  border: 1px solid #E0E0E0; 
+  width: 400px; 
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px;
+}
+
+.unregistered {
+  width: 500px;
+  background-color: #FCC;
+  color: #966;
+  padding: 10px;
+  border: 1px solid #900;
+  margin: 5px 30px 5px 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/************************************************************
+ * Gravity Form Display Styles
+ ************************************************************/
+ 
+table .entry-details {
+  width: 100%;
+}
+
+table .entry-details tbody {
+  padding: 0px;
+  margin: 0px;
+  background-color: #fff;
+}
+
+#PHPurchaseOrderViewTable td .entry-view-field-name {
+  font-weight: bold;
+  background-color: #eee;
+  margin: 0px;
+  border: none;
+}
+
+#PHPurchaseOrderViewTable td .entry-view-field-value {
+  padding-left: 25px !important;
+  border: none !important;
+}
+
+/************************************************************
+ * Multiselect Styles
+ ************************************************************/
+.multiselect {
+	width: 460px;
+	height: 200px !important;
+}
+
+#switcher {
+	margin-top: 20px;
+}
+
+form {margin: 0; padding: 0;}
+
+.ui-multiselect { border: 1px solid #999; font-size: 0.8em; }
+.ui-multiselect ul { -moz-user-select: none; }
+.ui-multiselect li { margin: 0; padding: 0; cursor: default; line-height: 20px; height: 20px; font-size: 11px; list-style: none; }
+.ui-multiselect li a { color: #999; text-decoration: none; padding: 0; display: block; float: left; cursor: pointer;}
+.ui-multiselect li.ui-draggable-dragging { padding-left: 10px; }
+
+.ui-multiselect div.selected { position: relative; padding: 0; margin: 0; border: 0; float:left; }
+.ui-multiselect ul.selected { position: relative; padding: 0; overflow: auto; overflow-x: hidden; background: #fff; margin: 0; list-style: none; border: 0; position: relative; width: 100%; }
+.ui-multiselect ul.selected li { }
+
+.ui-multiselect div.available { position: relative; padding: 0; margin: 0; border: 0; float:left; border-left: 1px solid #999; }
+.ui-multiselect ul.available { position: relative; padding: 0; overflow: auto; overflow-x: hidden; background: #fff; margin: 0; list-style: none; border: 0; width: 100%; }
+.ui-multiselect ul.available li { padding-left: 10px; }
+ 
+.ui-multiselect .ui-state-default { border: none; margin-bottom: 1px; position: relative; padding-left: 20px;}
+.ui-multiselect .ui-state-hover { border: none; }
+.ui-multiselect .ui-widget-header {border: none; font-size: 11px; margin-bottom: 1px;}
+ 
+.ui-multiselect .add-all { float: right; padding: 7px;}
+.ui-multiselect .remove-all { float: right; padding: 7px;}
+.ui-multiselect .search { float: left; padding: 4px;}
+.ui-multiselect .count { float: left; padding: 7px;}
+
+.ui-multiselect li span.ui-icon-arrowthick-2-n-s { position: absolute; left: 2px; }
+.ui-multiselect li a.action { position: absolute; right: 2px; top: 2px; }
+ 
+.ui-multiselect input.search { height: 14px; padding: 1px; opacity: 0.5; margin: 4px; width: 100px; }

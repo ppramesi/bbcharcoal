@@ -1,0 +1,16 @@
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName bbcharcoal.com
+AuthUserFile /mnt/stor9-wc2-dfw1/528353/528995/www.bbcharcoal.com/web/content/_vti_pvt/service.pwd
+AuthGroupFile /mnt/stor9-wc2-dfw1/528353/528995/www.bbcharcoal.com/web/content/_vti_pvt/service.grp

@@ -1,0 +1,10 @@
+[02-Jul-2013 06:45:11] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/page-industrial.php on line 5
+[02-Jul-2013 06:45:14] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/single.php on line 10
+[03-Jul-2013 09:02:55] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/single.php on line 10
+[03-Jul-2013 09:02:55] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/page-industrial.php on line 5
+[03-Jul-2013 20:35:22] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/single.php on line 10
+[03-Jul-2013 20:35:23] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/page-industrial.php on line 5
+[03-Jul-2013 21:30:00] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/page-industrial.php on line 5
+[03-Jul-2013 21:30:13] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/single.php on line 10
+[01-Aug-2013 13:32:57] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/page-industrial.php on line 5
+[01-Aug-2013 13:33:00] PHP Fatal error:  Call to undefined function  get_header() in /home5/joebotwe/public_html/bbcharcoal/web/media/single.php on line 10

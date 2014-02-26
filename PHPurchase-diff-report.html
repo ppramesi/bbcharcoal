@@ -1,0 +1,2148 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EFEFFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EFEFFF; text-decoration: line-through; }
+td.TextItemInsigDiffMod { color: #000000; background-color: #EFEFFF; }
+td.TextItemInsigLeftMod { color: #000000; background-color: #EFEFFF; }
+td.TextItemInsigRightMod { color: #000000; background-color: #EFEFFF; }
+td.TextItemNum { color: #827357; background-color: #F2F2F2; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigDiffMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigLeftMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigRightMod { color: #000000; background-color: #FFE3E3; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+</style>
+<title>PHPurchase-diff-report</title>
+</head>
+<body>
+PHPurchase-diff-report<br/>
+Produced: 1/29/2014 1:56:00 PM<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; Differences, Ignoring Unimportant &nbsp;
+<br/>
+Left: Original PHPurchase &nbsp;
+<br/>
+Right: Modified PHPurchase &nbsp;
+<br/>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: scheduleShipment.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">26</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">/*if($ShoppingCart-&gt;isPallet()){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">27</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightBooking</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">bookFreightShipment();</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">28</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}else{</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">34</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}*/</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">122</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$useUPS</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">true;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">123</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if($ShoppingCart-&gt;isPallet()){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">124</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">PHPurchaseCommon::log(&quot;Scheduling</span> <span class="TextSegSigDiff">Shipment</span> <span class="TextSegSigDiff">With</span> <span class="TextSegSigDiff">Freight&quot;);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">125</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$kaboom</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">explode(&quot;</span> <span class="TextSegSigDiff">-</span> <span class="TextSegSigDiff">&quot;,</span> <span class="TextSegSigDiff">$rate-&gt;service);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">126</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$name</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$kaboom[0];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">127</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$frid</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$kaboom[2];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">128</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$sictransitgloria</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$kaboom[1];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">129</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$weekendAdjuster</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">0;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">130</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if((date('N')</span> <span class="TextSegSigDiff">+</span> <span class="TextSegSigDiff">1)</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">6){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">131</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$weekendAdjuster</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">2;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">132</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}else</span> <span class="TextSegSigDiff">if((date('N')</span> <span class="TextSegSigDiff">+</span> <span class="TextSegSigDiff">1)==</span> <span class="TextSegSigDiff">7){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">133</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$weekendAdjuster</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">1;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">116</td>
+<td class="TextItemSigDiffMod">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">134</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">135</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$pickup</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">date('l</span> <span class="TextSegSigDiff">jS</span> <span class="TextSegSigDiff">\of</span> <span class="TextSegSigDiff">F</span> <span class="TextSegSigDiff">Y</span> <span class="TextSegSigDiff">h:i:s</span> <span class="TextSegSigDiff">A',</span> <span class="TextSegSigDiff">mktime($hour,</span> <span class="TextSegSigDiff">0,</span> <span class="TextSegSigDiff">0,</span> <span class="TextSegSigDiff">date('n'),</span> <span class="TextSegSigDiff">date('j')</span> <span class="TextSegSigDiff">+</span> <span class="TextSegSigDiff">1</span> <span class="TextSegSigDiff">+</span> <span class="TextSegSigDiff">$weekendAdjuster));</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">136</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">//$pickup</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">date('l</span> <span class="TextSegSigDiff">jS</span> <span class="TextSegSigDiff">\of</span> <span class="TextSegSigDiff">F</span> <span class="TextSegSigDiff">Y</span> <span class="TextSegSigDiff">h:i:s</span> <span class="TextSegSigDiff">A',</span> <span class="TextSegSigDiff">$tomorrow);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">137</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$price</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$rate-&gt;rate;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">138</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$useUPS</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">false;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">139</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">//$freightBooking</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">bookFreightShipment($rate-&gt;code);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">140</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">//$freightBooking-&gt;setAsTest();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">141</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$moreInfo</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_POST['payment'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">142</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">array();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">143</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['ContactPerson']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$shippingInfo['firstName']</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">'</span> <span class="TextSegSigDiff">'</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$shippingInfo['lastName'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">144</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['LocationName']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_POST['companyName'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">145</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['LocationType']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_SESSION['freight_loc_type'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">146</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['MainPhone']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$moreInfo['phone'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">147</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['Email']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$moreInfo['email'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">148</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['Address1']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$validAddress['address'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">149</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['City']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$validAddress['city'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">150</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['State']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$validAddress['state'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">151</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['Zip']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$validAddress['zip'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">152</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightShipmentArgs['HasLoadingDock']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">strcmp($_POST['loadingDock'],</span> <span class="TextSegSigDiff">'exists')</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">0</span> <span class="TextSegSigDiff">?</span> <span class="TextSegSigDiff">true</span> <span class="TextSegSigDiff">:</span> <span class="TextSegSigDiff">false;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">153</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightBooking</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">bookFreightShipment($rate-&gt;code);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">154</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">//$freightBooking-&gt;setAsTest();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">155</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightBooking-&gt;setTestNote();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">156</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightBooking-&gt;setShipmentArgs($freightShipmentArgs);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">157</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$statusArray</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$freightBooking-&gt;goBookShipment(true);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">158</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$shippedID</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$statusArray['ShipmentId'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">159</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">unset($_SESSION['freight_sinfo']);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">160</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$_SESSION['freight_sinfo']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">&quot;SHIPPED</span> <span class="TextSegSigDiff">WITH\n--------------------\nCarrier:</span> <span class="TextSegSigDiff">$name\nTransit:</span> <span class="TextSegSigDiff">$sictransitgloria\nPickup</span> <span class="TextSegSigDiff">Date:</span> <span class="TextSegSigDiff">$pickup\nTotal</span> <span class="TextSegSigDiff">Shipping:</span> <span class="TextSegSigDiff">$price\nShipment</span> <span class="TextSegSigDiff">ID:</span> <span class="TextSegSigDiff">$shippedID\n\n&quot;;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">161</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">$statusArray['Status']</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;:Shipment</span> <span class="TextSegSigDiff">ID</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">&quot;</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$statusArray['ShipmentId'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">162</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}else{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">163</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$upsConnect</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">ups(&quot;$accessNumber&quot;,&quot;$username&quot;,&quot;$password&quot;);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">164</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$upsConnect-&gt;setTemplatePath(UPS_BASE.'xml/');</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">165</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$upsConnect-&gt;setTestingMode(0);</span> <span class="TextSegSigDiff">//</span> <span class="TextSegSigDiff">Change</span> <span class="TextSegSigDiff">this</span> <span class="TextSegSigDiff">to</span> <span class="TextSegSigDiff">0</span> <span class="TextSegSigDiff">for</span> <span class="TextSegSigDiff">production</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">121</td>
+<td class="TextItemSigDiffMod">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">171</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">172</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if($useUPS){</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">217</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">219</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}else{</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">220</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">return;</span></td>
+</tr>
+</table>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: phpurchase.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">248</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$_SESSION['freight_loc_type']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_POST['locationType'];</span></td>
+</tr>
+</table>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: models/cart.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">925</td>
+<td class="TextItemSigDiffMod">&nbsp;&nbsp; * </td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">925</td>
+<td class="TextItemSigDiffMod">&nbsp;&nbsp; * <span class="TextSegSigDiff">1/18/14</span> <span class="TextSegSigDiff">-</span> <span class="TextSegSigDiff">modded</span> <span class="TextSegSigDiff">for</span> <span class="TextSegSigDiff">eFreight</span> <span class="TextSegSigDiff">by</span> <span class="TextSegSigDiff">Priya</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">934</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; if($cartWeight &gt; 0 &amp;&amp; isset($_SESSION['phpurchase_shipping_zip']) &amp;&amp; isset($_SESSION['phpurchase_shipping_country_code'])) {</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">934</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; if($cartWeight &gt; 0 &amp;&amp; isset($_SESSION['phpurchase_shipping_zip'])<span class="TextSegSigDiff">/*</span> &amp;&amp; isset($_SESSION['phpurchase_shipping_country_code'])<span class="TextSegSigDiff">*/</span>) {</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">938</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; if(isset($_SESSION['PHPurchaseLiveRates'])) {</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">938</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">/*</span>if(isset($_SESSION['PHPurchaseLiveRates'])) {</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">950</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; }</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">950</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; }<span class="TextSegSigDiff">*/</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">952</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$palletExist</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">false;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">953</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$palletNames</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">array();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">954</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$palletPrice</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">0;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">955</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$palletWeight</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">0;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">956</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$count</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">1;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">957</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">foreach($this-&gt;getItems()</span> <span class="TextSegSigDiff">as</span> <span class="TextSegSigDiff">$itemKey</span> <span class="TextSegSigDiff">=&gt;</span> <span class="TextSegSigDiff">$anItem){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">958</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if(stripos($anItem-&gt;getFullDisplayName(),</span> <span class="TextSegSigDiff">'pallet')</span> <span class="TextSegSigDiff">!==</span> <span class="TextSegSigDiff">false){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">959</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$palletExist</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">true;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">960</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">break;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">961</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">962</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">963</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if($palletExist){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">964</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">foreach($this-&gt;getItems()</span> <span class="TextSegSigDiff">as</span> <span class="TextSegSigDiff">$itemKey</span> <span class="TextSegSigDiff">=&gt;</span> <span class="TextSegSigDiff">$anItem){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">965</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$quantString</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$anItem-&gt;getQuantity()</span> <span class="TextSegSigDiff">&gt;</span> <span class="TextSegSigDiff">1</span> <span class="TextSegSigDiff">?</span> <span class="TextSegSigDiff">$anItem-&gt;getQuantity()</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;</span> <span class="TextSegSigDiff">x</span> <span class="TextSegSigDiff">&quot;</span> <span class="TextSegSigDiff">:</span> <span class="TextSegSigDiff">&quot;&quot;;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">966</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$palletNames[]</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$quantString</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$anItem-&gt;getFullDisplayName();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">967</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$palletPrice</span> <span class="TextSegSigDiff">+=</span> <span class="TextSegSigDiff">$anItem-&gt;getProductPrice()</span>&nbsp; <span class="TextSegSigDiff">*</span> <span class="TextSegSigDiff">$anItem-&gt;getQuantity();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">968</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$palletWeight</span> <span class="TextSegSigDiff">+=</span> <span class="TextSegSigDiff">$anItem-&gt;getWeight()</span>&nbsp; <span class="TextSegSigDiff">*</span> <span class="TextSegSigDiff">$anItem-&gt;getQuantity();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">969</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">970</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$count++;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">971</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">973</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">/*if(!empty($comment)){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">974</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$param['refNumber']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$comment;</span> <span class="TextSegSigDiff">//to</span> <span class="TextSegSigDiff">be</span> <span class="TextSegSigDiff">implemented</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">975</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}*/</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">976</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if($palletExist</span> <span class="TextSegSigDiff">&amp;&amp;</span> <span class="TextSegSigDiff">class_exists(&quot;freightShipping&quot;)){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">977</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$param</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">array();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">978</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$param['itemDesc']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">implode(',</span> <span class="TextSegSigDiff">',</span> <span class="TextSegSigDiff">$palletNames)</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">'.';</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">979</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$param['itemPrice']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$palletPrice;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">980</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$param['weight']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$palletWeight;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">981</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$param['count']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$this-&gt;countItems();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">982</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$param['destinationZip']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$zip;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">983</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$param['destinationType']</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_SESSION['freight_loc_type'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">984</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if(isset($_SESSION['PHPurchaseLiveRates']))</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">985</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$cartWeight</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$this-&gt;getCartWeight();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">986</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_SESSION['PHPurchaseLiveRates'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">987</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if($liveRates-&gt;weight</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">$palletWeight</span> <span class="TextSegSigDiff">&amp;&amp;</span> </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">988</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates-&gt;toZip</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">$zip</span> <span class="TextSegSigDiff">&amp;&amp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">989</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates-&gt;locType</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">$_SESSION['freight_loc_type']){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">990</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">$liveRates;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">991</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">992</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">993</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freight</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">freightShipping($param);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">994</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$rates</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$freight-&gt;getFreightRates();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">995</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates-&gt;weight</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$this-&gt;getCartWeight();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">996</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates-&gt;toZip</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$zip;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">997</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates-&gt;locType</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_SESSION['freight_loc_type'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">998</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates-&gt;clearRates();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">999</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">foreach($rates</span> <span class="TextSegSigDiff">as</span> <span class="TextSegSigDiff">$service</span> <span class="TextSegSigDiff">=&gt;</span> <span class="TextSegSigDiff">$rate)</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1000</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$boom</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">explode('</span> <span class="TextSegSigDiff">-</span> <span class="TextSegSigDiff">',</span> <span class="TextSegSigDiff">$service);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1001</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates-&gt;addRate($service</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">'</span> <span class="TextSegSigDiff">-</span> <span class="TextSegSigDiff">Pallet',</span> <span class="TextSegSigDiff">$rate,</span> <span class="TextSegSigDiff">$boom[2]);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1002</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1003</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}else{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1004</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if(isset($_SESSION['PHPurchaseLiveRates']))</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1005</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$cartWeight</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$this-&gt;getCartWeight();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1006</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_SESSION['PHPurchaseLiveRates'];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1007</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">PHPurchaseCommon::log(</span>&nbsp; <span class="TextSegSigDiff">&quot;Live</span> <span class="TextSegSigDiff">Rates</span> <span class="TextSegSigDiff">were</span> <span class="TextSegSigDiff">found</span> <span class="TextSegSigDiff">in</span> <span class="TextSegSigDiff">session.</span> <span class="TextSegSigDiff">Now</span> <span class="TextSegSigDiff">comparing...</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1008</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates-&gt;weight</span> <span class="TextSegSigDiff">--&gt;</span> <span class="TextSegSigDiff">$cartWeight</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1009</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$liveRates-&gt;toZip</span> <span class="TextSegSigDiff">--&gt;</span> <span class="TextSegSigDiff">$zip</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1010</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&quot;);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1011</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if($liveRates-&gt;weight</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">$cartWeight</span> <span class="TextSegSigDiff">&amp;&amp;</span> <span class="TextSegSigDiff">$liveRates-&gt;toZip</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">$zip</span> <span class="TextSegSigDiff">/*&amp;&amp;</span> <span class="TextSegSigDiff">$liveRates-&gt;toCountryCode</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">$countryCode*/)</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1012</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">PHPurchaseCommon::log(&quot;Using</span> <span class="TextSegSigDiff">Live</span> <span class="TextSegSigDiff">Rates</span> <span class="TextSegSigDiff">from</span> <span class="TextSegSigDiff">the</span> <span class="TextSegSigDiff">session&quot;);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1013</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">$liveRates;</span> </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1014</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1015</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">963</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; else {</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">1026</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; <span class="TextSegSigDiff">}</span>else{</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">1034</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">1036</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">//does</span> <span class="TextSegSigDiff">the</span> <span class="TextSegSigDiff">cart</span> <span class="TextSegSigDiff">have</span> <span class="TextSegSigDiff">a</span> <span class="TextSegSigDiff">pallet</span> <span class="TextSegSigDiff">that</span> <span class="TextSegSigDiff">needs</span> <span class="TextSegSigDiff">to</span> <span class="TextSegSigDiff">be</span> <span class="TextSegSigDiff">sent</span> <span class="TextSegSigDiff">with</span> <span class="TextSegSigDiff">freight?</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1037</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">function</span> <span class="TextSegSigDiff">isPallet(){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1038</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; <span class="TextSegSigDiff">foreach($this-&gt;getItems()</span> <span class="TextSegSigDiff">as</span> <span class="TextSegSigDiff">$itemKey</span> <span class="TextSegSigDiff">=&gt;</span> <span class="TextSegSigDiff">$anItem){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1039</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if(stripos($anItem-&gt;getFullDisplayName(),</span> <span class="TextSegSigDiff">'pallet')</span> <span class="TextSegSigDiff">!==</span> <span class="TextSegSigDiff">false){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1040</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">true;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1041</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1042</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">1043</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">false;</span></td>
+</tr>
+</table>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: common.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">121</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$filenameX</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">WP_PLUGIN_DIR</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;/phpurchase/log-new.txt&quot;;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">122</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$fd</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">fopen($filenameX,</span> <span class="TextSegSigDiff">&quot;a&quot;);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">123</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">fwrite($fd,</span> <span class="TextSegSigDiff">$header</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$data);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">124</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">file_put_contents($filename,</span> <span class="TextSegSigDiff">$header</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$data,</span> <span class="TextSegSigDiff">FILE_APPEND);</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">122</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">file_put_contents($filename,</span> <span class="TextSegSigDiff">$header</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$data,</span> <span class="TextSegSigDiff">FILE_APPEND);</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">126</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; </td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">914</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return $msg;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">918</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return <span class="TextSegSigDiff">array(</span>$msg<span class="TextSegSigDiff">,</span> <span class="TextSegSigDiff">&quot;&quot;)</span>;</td>
+</tr>
+</table>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: live-rates.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">6</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">$locType;</span></td>
+</tr>
+</table>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: auth-checkout.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">89</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">//echo</span> <span class="TextSegSigDiff">$response;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">90</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$weTesting</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">false;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">87</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; if($response == '1') {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">91</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; if($response == '1' <span class="TextSegSigDiff">||</span> <span class="TextSegSigDiff">$weTesting</span>) {</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">100</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">PHPurchaseCommon::log(&quot;Scheduling</span> <span class="TextSegSigDiff">Shipment...&quot;);</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">117</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">//</span>$authnet-&gt;dumpFields();</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">122</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; $authnet-&gt;dumpFields();</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">118</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">//</span>$authnet-&gt;dumpResponse();</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">123</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; $authnet-&gt;dumpResponse();</td>
+</tr>
+</table>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: views/cart.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">166</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Shipping to &lt;?php <span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">c</span>ho $_SESSION['phpurchase_shipping_zip']; ?&gt; </td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">166</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Shipping to &lt;?php <span class="TextSegSigDiff">$frloctystr</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_SESSION['PHPurchaseCart']-&gt;isPallet()</span> <span class="TextSegSigDiff">?</span> <span class="TextSegSigDiff">&quot;</span> <span class="TextSegSigDiff">(&quot;</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$_SESSION['freight_loc_type']</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;)&quot;</span> <span class="TextSegSigDiff">:</span> <span class="TextSegSigDiff">&quot;&quot;;ec</span>ho $_SESSION['phpurchase_shipping_zip'] <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$frloctystr</span>; ?&gt; </td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">181</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;?php foreach($rates as $rate): <span class="TextSegSigDiff">?&gt;</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">181</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;?php foreach($rates as $rate): </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">182</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$servStrs</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">explode('</span> <span class="TextSegSigDiff">-</span> <span class="TextSegSigDiff">',</span> <span class="TextSegSigDiff">$rate-&gt;service);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">183</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">if(</span> <span class="TextSegSigDiff">!empty($servStrs[1])</span> <span class="TextSegSigDiff">){</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">184</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$servStr</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$servStrs[0]</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">'</span> <span class="TextSegSigDiff">('</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$servStrs[1]</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">')';</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">185</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$servVal</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$servStrs[2];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">186</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}else{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">187</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$servStr</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$servVal</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$servStrs[0];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">188</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">189</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">?&gt;</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">185</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; echo &quot;$<span class="TextSegSigDiff">rate-&gt;</span>serv<span class="TextSegSigDiff">ice</span>: \$$rate-&gt;rate&quot;;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">193</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; echo &quot;$serv<span class="TextSegSigDiff">Str</span>: \$$rate-&gt;rate&quot;;</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">223</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;text&quot; name=&quot;shipping_country_code&quot; value=&quot;&lt;?php echo $homeCountryCode ?&gt;&quot; id=&quot;shipping_country_cod<span class="TextSegSigDiff">e</span>&quot;&gt;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">230</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;text&quot; name=&quot;shipping_country_code&quot; value=&quot;&lt;?php echo $homeCountryCode <span class="TextSegSigDiff">;</span>?&gt;&quot; id=&quot;shipping_country_cod<span class="TextSegSigDiff">e&quot;</span> <span class="TextSegSigDiff">style=&quot;margin-right:</span> <span class="TextSegSigDiff">-4px</span>&quot;&gt;</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">225</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">232</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;br&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">233</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;span&gt;Delivery</span> <span class="TextSegSigDiff">Location</span> <span class="TextSegSigDiff">Type&lt;span</span> <span class="TextSegSigDiff">style=&quot;color:</span> <span class="TextSegSigDiff">#808080;</span> <span class="TextSegSigDiff">font-size:.8em&quot;&gt;</span> <span class="TextSegSigDiff">(For</span> <span class="TextSegSigDiff">Pallet/Freight</span> <span class="TextSegSigDiff">Shipping</span> <span class="TextSegSigDiff">Only)&lt;/span&gt;:&lt;/span&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">234</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;select</span> <span class="TextSegSigDiff">title=&quot;type&quot;</span> <span class="TextSegSigDiff">id=&quot;shipping-location-type&quot;</span> <span class="TextSegSigDiff">name=&quot;locationType&quot;</span> <span class="TextSegSigDiff">style=&quot;margin-left:</span> <span class="TextSegSigDiff">0&quot;&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">235</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Commercial&quot;&gt;Commercial/Business&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">236</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Residential&quot;&gt;Residential&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">237</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;DistributionCenter&quot;&gt;Distribution</span> <span class="TextSegSigDiff">Center&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">238</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;SelfStorage&quot;&gt;Self</span> <span class="TextSegSigDiff">Storage&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">239</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Hotel&quot;&gt;Hotel&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">240</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Airport&quot;&gt;Airport&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">241</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;CampParkResort&quot;&gt;Camp/Park/Resort&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">242</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Church&quot;&gt;Church&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">243</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;CorrectionalFacility&quot;&gt;Correctional</span> <span class="TextSegSigDiff">Facility&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">244</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Construction&quot;&gt;Construction</span> <span class="TextSegSigDiff">Site&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">245</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;ContainerYard&quot;&gt;Container</span> <span class="TextSegSigDiff">Yard/CFS&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">246</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;TradeShow&quot;&gt;Trade</span> <span class="TextSegSigDiff">Show/Convention&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">247</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Farm&quot;&gt;Farm&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">248</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;GolfCourse&quot;&gt;Golf</span> <span class="TextSegSigDiff">Course/Country</span> <span class="TextSegSigDiff">Club&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">249</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;IndianReservation&quot;&gt;Indian</span> <span class="TextSegSigDiff">Reservation&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">250</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;MilitaryBase&quot;&gt;Military</span> <span class="TextSegSigDiff">Base&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">251</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Mine&quot;&gt;Mine&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">252</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Museum&quot;&gt;Museum&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">253</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;PortPier&quot;&gt;Port/Pier/Wharf&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">254</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;PublicUtility&quot;&gt;Public</span> <span class="TextSegSigDiff">Utility&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">255</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;School&quot;&gt;School/University&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">256</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;CarrierTerminal&quot;&gt;Trucking</span> <span class="TextSegSigDiff">Terminal&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">257</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;OtherLimitedAccess&quot;&gt;Other</span> <span class="TextSegSigDiff">Limited</span> <span class="TextSegSigDiff">Access&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">258</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/select&gt;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">226</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;submit&quot; name=&quot;updateCart&quot; value=&quot;Calculate Shipping&quot; id=&quot;shipping_submit&quot; class=&quot;PHPurchaseButtonSecondary&quot; /&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">259</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;submit&quot; name=&quot;updateCart&quot; value=&quot;Calculate Shipping&quot; id=&quot;shipping_submit&quot; class=&quot;PHPurchaseButtonSecondary&quot; <span class="TextSegSigDiff">style=&quot;width:</span> <span class="TextSegSigDiff">153px</span> <span class="TextSegSigDiff">!important&quot;</span>/&gt;</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">269</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$kaboom</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">explode(&quot;</span> <span class="TextSegSigDiff">-</span> <span class="TextSegSigDiff">&quot;,</span> <span class="TextSegSigDiff">$selectedRate-&gt;service);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">270</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightName</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$kaboom[0];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">271</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$loctype</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_SESSION['PHPurchaseCart']-&gt;isPallet()</span> <span class="TextSegSigDiff">?</span> <span class="TextSegSigDiff">&quot;</span> <span class="TextSegSigDiff">(&quot;</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$_SESSION['freight_loc_type']</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;)&quot;</span> <span class="TextSegSigDiff">:</span> <span class="TextSegSigDiff">&quot;&quot;;;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">272</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightDay</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">empty($kaboom[1])</span> <span class="TextSegSigDiff">?</span> <span class="TextSegSigDiff">&quot;&quot;</span> <span class="TextSegSigDiff">:</span> <span class="TextSegSigDiff">&quot;</span> <span class="TextSegSigDiff">(&quot;</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$kaboom[1]</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;)&quot;;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">236</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; echo &quot;Shipping to &quot; . $_SESSION['phpurchase_shipping_zip'] . &quot; via &quot; . $<span class="TextSegSigDiff">s</span><span class="TextSegSigDiff">elect</span><span class="TextSegSigDiff">ed</span><span class="TextSegSigDiff">Rate-&gt;service</span>;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">273</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; echo &quot;Shipping to &quot; . $_SESSION['phpurchase_shipping_zip'] . <span class="TextSegSigDiff">$loctype</span> <span class="TextSegSigDiff">.</span> &quot; via &quot; . $<span class="TextSegSigDiff">freightName</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$fr</span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">ightDay</span>;</td>
+</tr>
+</table>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: checkout-form.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">251</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;li</span> <span class="TextSegSigDiff">style=&quot;&lt;?php</span> <span class="TextSegSigDiff">if(!$_SESSION['PHPurchaseCart']-&gt;isPallet()){echo</span> <span class="TextSegSigDiff">'display:</span> <span class="TextSegSigDiff">none';}?&gt;&quot;&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">252</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;label&gt;Company</span> <span class="TextSegSigDiff">name:&lt;/label&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">253</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;input</span> <span class="TextSegSigDiff">type=&quot;text&quot;</span> <span class="TextSegSigDiff">id=&quot;billing-companyName&quot;</span> <span class="TextSegSigDiff">name=&quot;companyName&quot;&gt;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">254</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/li&gt;</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">360</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;ul</span> <span class="TextSegSigDiff">class=&quot;shortLabels&quot;</span> <span class="TextSegSigDiff">style=&quot;width:</span> <span class="TextSegSigDiff">275px;</span> <span class="TextSegSigDiff">&lt;?php</span> <span class="TextSegSigDiff">if(!$_SESSION['PHPurchaseCart']-&gt;isPallet()){echo</span> <span class="TextSegSigDiff">'display:</span> <span class="TextSegSigDiff">none';}?&gt;&quot;&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">361</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;li&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">362</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;label</span> <span class="TextSegSigDiff">class=&quot;short&quot;</span> <span class="TextSegSigDiff">style=&quot;font-size:</span> <span class="TextSegSigDiff">0.75em&quot;&gt;Does</span> <span class="TextSegSigDiff">your</span> <span class="TextSegSigDiff">delivery</span> <span class="TextSegSigDiff">location</span> <span class="TextSegSigDiff">has</span> <span class="TextSegSigDiff">a</span> <span class="TextSegSigDiff">loading</span> <span class="TextSegSigDiff">dock?&lt;/label&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">363</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;input</span> <span class="TextSegSigDiff">type=&quot;checkbox&quot;</span> <span class="TextSegSigDiff">name=&quot;loadingDock&quot;</span> <span class="TextSegSigDiff">value=&quot;exists&quot;&gt;Yes</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">364</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/li&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">365</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/ul&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">366</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;!--&lt;ul</span> <span class="TextSegSigDiff">class=&quot;shortLabels&quot;</span> <span class="TextSegSigDiff">style=&quot;width:</span> <span class="TextSegSigDiff">275px;</span> <span class="TextSegSigDiff">&lt;?php</span> <span class="TextSegSigDiff">//if(!$_SESSION['PHPurchaseCart']-&gt;isPallet()){echo</span> <span class="TextSegSigDiff">'display:</span> <span class="TextSegSigDiff">none';}?&gt;&quot;&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">367</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;li&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">368</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;label</span> <span class="TextSegSigDiff">class=&quot;short&quot;&gt;Location</span> <span class="TextSegSigDiff">Type&lt;/label&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">369</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;span</span> <span class="TextSegSigDiff">style=&quot;margin-left:</span> <span class="TextSegSigDiff">-4px;</span> <span class="TextSegSigDiff">margin-right:</span> <span class="TextSegSigDiff">-6px;&quot;&gt;:&lt;/span&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">370</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;div</span> <span class="TextSegSigDiff">style=&quot;display:</span> <span class="TextSegSigDiff">inline-table&quot;&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">371</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;select</span> <span class="TextSegSigDiff">title=&quot;type&quot;</span> <span class="TextSegSigDiff">id=&quot;shipping-location-type&quot;</span> <span class="TextSegSigDiff">name=&quot;locationType&quot;&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">372</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Commercial&quot;&gt;Commercial/Business&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">373</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Residential&quot;&gt;Residential&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">374</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;DistributionCenter&quot;&gt;Distribution</span> <span class="TextSegSigDiff">Center&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">375</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;SelfStorage&quot;&gt;Self</span> <span class="TextSegSigDiff">Storage&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">376</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Hotel&quot;&gt;Hotel&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">377</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Airport&quot;&gt;Airport&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">378</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;CampParkResort&quot;&gt;Camp/Park/Resort&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">379</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Church&quot;&gt;Church&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">380</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;CorrectionalFacility&quot;&gt;Correctional</span> <span class="TextSegSigDiff">Facility&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">381</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Construction&quot;&gt;Construction</span> <span class="TextSegSigDiff">Site&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">382</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;ContainerYard&quot;&gt;Container</span> <span class="TextSegSigDiff">Yard/CFS&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">383</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;TradeShow&quot;&gt;Trade</span> <span class="TextSegSigDiff">Show/Convention&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">384</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Farm&quot;&gt;Farm&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">385</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;GolfCourse&quot;&gt;Golf</span> <span class="TextSegSigDiff">Course/Country</span> <span class="TextSegSigDiff">Club&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">386</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;IndianReservation&quot;&gt;Indian</span> <span class="TextSegSigDiff">Reservation&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">387</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;MilitaryBase&quot;&gt;Military</span> <span class="TextSegSigDiff">Base&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">388</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Mine&quot;&gt;Mine&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">389</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;Museum&quot;&gt;Museum&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">390</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;PortPier&quot;&gt;Port/Pier/Wharf&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">391</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;PublicUtility&quot;&gt;Public</span> <span class="TextSegSigDiff">Utility&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">392</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;School&quot;&gt;School/University&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">393</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;CarrierTerminal&quot;&gt;Trucking</span> <span class="TextSegSigDiff">Terminal&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">394</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;option</span> <span class="TextSegSigDiff">value=&quot;OtherLimitedAccess&quot;&gt;Other</span> <span class="TextSegSigDiff">Limited</span> <span class="TextSegSigDiff">Access&lt;/option&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">395</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/select&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">396</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;div</span> <span class="TextSegSigDiff">style=&quot;font-size:</span> <span class="TextSegSigDiff">.7em;</span> <span class="TextSegSigDiff">font-style:</span> <span class="TextSegSigDiff">italic;margin-left:</span> <span class="TextSegSigDiff">5px;color:</span> <span class="TextSegSigDiff">#858585;&quot;&gt;For</span> <span class="TextSegSigDiff">freight/pallet</span> <span class="TextSegSigDiff">shipping</span> <span class="TextSegSigDiff">only&lt;/div&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">397</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/div&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">398</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/li&gt;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">399</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/ul&gt;--&gt;</span></td>
+</tr>
+</table>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: receipt.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">14</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$palletMethod</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">explode('</span> <span class="TextSegSigDiff">-</span> <span class="TextSegSigDiff">',</span> <span class="TextSegSigDiff">$order-&gt;shipping_method);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">15</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">if(strcmp($palletMethod[3],</span> <span class="TextSegSigDiff">&quot;Pallet&quot;)</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">0){</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">15</td>
+<td class="TextItemSigDiffMod">elseif(isset($_SESSION['order_id'])) {</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">18</td>
+<td class="TextItemSigDiffMod"><span class="TextSegSigDiff">}</span>elseif(isset($_SESSION['order_id'])) {</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">189</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; </td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">192</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;?php</span> <span class="TextSegSigDiff">if(isset($_SESSION['freight_sinfo'])){?&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">190</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &lt;<span class="TextSegSigDiff">?php</span> <span class="TextSegSigDiff">if(!empty($order-&gt;ship_country)):</span> <span class="TextSegSigDiff">?</span>&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">193</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;<span class="TextSegSigDiff">/</span><span class="TextSegSigDiff">p</span>&gt;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">194</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">195</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;td&gt;&lt;p&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">191</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &lt;<span class="TextSegSigDiff">?php</span> <span class="TextSegSigDiff">echo</span> <span class="TextSegSigDiff">$order-</span>&gt;shi<span class="TextSegSigDiff">p_c</span><span class="TextSegSigDiff">ountry</span> <span class="TextSegSigDiff">?</span>&gt;&lt;br/&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">196</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;<span class="TextSegSigDiff">str</span><span class="TextSegSigDiff">ong</span>&gt;Shi<span class="TextSegSigDiff">pped</span> <span class="TextSegSigDiff">With&lt;/stro</span><span class="TextSegSigDiff">ng</span>&gt;&lt;br/&gt;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">197</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;?php</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">198</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$toRmv</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">array(&quot;SHIPPED</span> <span class="TextSegSigDiff">WITH\n--------------------\n&quot;,</span> <span class="TextSegSigDiff">&quot;\n\n&quot;);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">199</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$printsFriend</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">str_replace($toRmv,</span> <span class="TextSegSigDiff">&quot;&quot;,</span> <span class="TextSegSigDiff">$_SESSION['freight_sinfo']);</span> </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">200</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$printsFriend</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">str_replace(&quot;\n&quot;,</span> <span class="TextSegSigDiff">&quot;&lt;br</span> <span class="TextSegSigDiff">/&gt;&quot;,</span> <span class="TextSegSigDiff">$printsFriend);</span> </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">201</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">echo</span> <span class="TextSegSigDiff">$printsFriend;</span> </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">192</td>
+<td class="TextItemSigDiffMod">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">202</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">?&gt;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">193</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &lt;?php <span class="TextSegSigDiff">endif;</span> ?&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">203</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;?php <span class="TextSegSigDiff">}else{</span> ?&gt;</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight">195</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &lt;br/&gt;&lt;em&gt;Delivery via: &lt;?php echo $order-&gt;shipping_method ?&gt;&lt;/em&gt;&lt;br/&gt;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">204</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &lt;br/&gt;&lt;em&gt;Delivery via: &lt;?php echo $order-&gt;shipping_method<span class="TextSegSigDiff">;</span>?&gt;&lt;/em&gt;&lt;br/<span class="TextSegSigDiff">&gt;&lt;?php</span> <span class="TextSegSigDiff">}</span> <span class="TextSegSigDiff">?</span>&gt;</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">305</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$receiptLog</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">fopen(LOG_BASE</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;receiptShipping.log&quot;,</span> <span class="TextSegSigDiff">&quot;a&quot;);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">306</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$count</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">0;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">307</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">//fwrite($receiptLog,</span> <span class="TextSegSigDiff">$count</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;\n&quot;);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">308</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$retUpsMsg</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">isset($_SESSION['freight_sinfo'])</span> <span class="TextSegSigDiff">?</span> <span class="TextSegSigDiff">false</span> <span class="TextSegSigDiff">:</span> <span class="TextSegSigDiff">true;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">296</td>
+<td class="TextItemSigDiffMod">&nbsp; $msg = PHPurchaseCommon::getEmailReceiptMessage($order, T<span class="TextSegSigDiff">RUE</span>);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">309</td>
+<td class="TextItemSigDiffMod">&nbsp; $msg = PHPurchaseCommon::getEmailReceiptMessage($order, <span class="TextSegSigDiff">$re</span>t<span class="TextSegSigDiff">UpsMsg</span>);</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">312</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">//fwrite($receiptLog,</span> <span class="TextSegSigDiff">$msg</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;\n&quot;);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">313</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$count</span> <span class="TextSegSigDiff">+=</span> <span class="TextSegSigDiff">1;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">299</td>
+<td class="TextItemSigDiffMod">&nbsp; $subject = $setting-&gt;lookupValue('receipt_subject');</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">314</td>
+<td class="TextItemSigDiffMod">&nbsp; $subject = <span class="TextSegSigDiff">&quot;TEST:</span> <span class="TextSegSigDiff">&quot;</span> <span class="TextSegSigDiff">.</span> $setting-&gt;lookupValue('receipt_subject');</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">317</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">//fwrite($receiptLog,</span> <span class="TextSegSigDiff">$count);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">318</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$count</span> <span class="TextSegSigDiff">+=</span> <span class="TextSegSigDiff">1;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">319</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$testingMsg</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">&quot;TEST:</span> <span class="TextSegSigDiff">&quot;</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">$msg[0];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">320</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$freightShippingInfo</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">isset($_SESSION['freight_sinfo'])</span> <span class="TextSegSigDiff">?</span> <span class="TextSegSigDiff">$_SESSION['freight_sinfo']</span> <span class="TextSegSigDiff">:</span> <span class="TextSegSigDiff">&quot;&quot;;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">321</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$finMsg</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">str_replace(&quot;BILLING</span> <span class="TextSegSigDiff">INFORMATION&quot;,</span> <span class="TextSegSigDiff">$freightShippingInfo</span> <span class="TextSegSigDiff">.</span> <span class="TextSegSigDiff">&quot;BILLING</span> <span class="TextSegSigDiff">INFORMATION&quot;,</span> <span class="TextSegSigDiff">$testingMsg);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">322</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$msg[0]</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$finMsg;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">323</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">//fwrite($receiptLog,</span> <span class="TextSegSigDiff">$count);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">324</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">$count</span> <span class="TextSegSigDiff">+=</span> <span class="TextSegSigDiff">1;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">325</td>
+<td class="TextItemSigRightMod">&nbsp; <span class="TextSegSigDiff">//unset($_SESSION['freight_sinfo']);</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">331</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; <span class="TextSegSigDiff">//fwrite($receiptLog,</span> <span class="TextSegSigDiff">$count);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">332</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; <span class="TextSegSigDiff">$count</span> <span class="TextSegSigDiff">+=</span> <span class="TextSegSigDiff">1;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">333</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$freightToAdd</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">$_SESSION['freight_sinfo'];</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">349</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">//fwrite($receiptLog,</span> <span class="TextSegSigDiff">$count);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">350</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; <span class="TextSegSigDiff">$count</span> <span class="TextSegSigDiff">+=</span> <span class="TextSegSigDiff">1;</span></td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemNum AlignRight">354</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">//fwrite($receiptLog,</span> <span class="TextSegSigDiff">$count);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">355</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; <span class="TextSegSigDiff">$count</span> <span class="TextSegSigDiff">+=</span> <span class="TextSegSigDiff">1;</span></td>
+</tr>
+</table>
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: receipt_print_version.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemNum AlignRight">124</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;?php</span> <span class="TextSegSigDiff">if(isset($_SESSION['freight_sinfo'])){?&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">125</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/p&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">126</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">127</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;td&gt;&lt;p&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">128</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;strong&gt;Shipped</span> <span class="TextSegSigDiff">With&lt;/strong&gt;&lt;br/&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">129</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;?php</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">130</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$printsFriend</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">str_replace(&quot;\n\n&quot;,</span> <span class="TextSegSigDiff">&quot;&quot;,</span> <span class="TextSegSigDiff">$_SESSION['freight_sinfo']);</span> </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">131</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">$printsFriend</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">str_replace(&quot;\n&quot;,</span> <span class="TextSegSigDiff">&quot;&lt;br</span> <span class="TextSegSigDiff">/&gt;&quot;,</span> <span class="TextSegSigDiff">$printsFriend);</span> </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">132</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">echo</span> <span class="TextSegSigDiff">$printsFriend;</span> </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">124</td>
+<td class="TextItemSigDiffMod">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">133</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">?&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">134</td>
+<td class="TextItemSigRightMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">&lt;?php</span> <span class="TextSegSigDiff">}else{</span> <span class="TextSegSigDiff">?&gt;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">125</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &lt;br/&gt;&lt;em&gt;Delivery via: &lt;?php echo $order-&gt;shipping_method ?&gt;&lt;/em&gt;&lt;br/&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">135</td>
+<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &lt;br/&gt;&lt;em&gt;Delivery via: &lt;?php echo $order-&gt;shipping_method<span class="TextSegSigDiff">;</span>?&gt;&lt;/em&gt;&lt;br/<span class="TextSegSigDiff">&gt;&lt;?php</span> <span class="TextSegSigDiff">}</span> <span class="TextSegSigDiff">?</span>&gt;</td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

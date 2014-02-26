@@ -1,0 +1,103 @@
+.PHPurchaseSuccess,
+.PHPurchaseError {
+  background-color: #FEE;
+  border: 1px solid red;
+  margin: 10px 0px;
+  padding: 5px 20px;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px;
+  color: #633;
+}
+
+.PHPurchaseSuccess {
+  background-color: #EFE;
+  border: 1px solid green;
+  color: #252;
+}
+
+.PHPurchaseSuccess h1 {
+  color: #BCB;
+}
+.PHPurchaseError h1 {
+  color: #CBB;
+  font-size: 1.5em;
+}
+
+.phorm2 {
+  min-width: 550px;
+  clear: both;
+  display: none;
+}
+
+.phorm2 .errorField {
+  border: 1px solid red;
+  background-color: #FEE;
+}
+
+.phorm2 ul {
+  margin: 0px;
+  padding: 0px;
+}
+.phorm2 ul li {
+  list-style: none !important;
+  background-image: none;
+  margin: 0px;
+  padding: 3px 0px 4px 0px !important;
+}
+
+.phorm2 ul li label {
+  display: inline-block;
+  width: 135px;
+  text-align: right;
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+.phorm2 ul li label.short {
+  width: 80px;
+}
+
+.phorm2 ul.shortLabels li label {
+  width: 85px;
+}
+
+.phorm2 ul li span.description,
+.phorm2 ul li p.description {
+  color: #858585;
+  font-style: italic;
+  /*margin: 0px 0px 0px 140px;*/
+  padding: 2px 0px 3px 0px;
+  line-height: 1.2em !important;
+}
+
+.phorm2 ul li span.description {
+  margin: 0px 0px 0px 7px;
+}
+
+.phorm2 ul.shortLabels li p.description {
+  /*margin-left: 90px;*/
+}
+
+.phorm2 .button {
+  width: 75px;
+}
+
+.phorm2 .PHPurchaseErrorField {
+  background-color: #FEE;
+  border: 1px solid #F75;
+  padding: 3px;
+}
+
+.phorm2 .stateField {
+  width: 25px !important;
+  margin-left: 2px;
+}
+
+.phorm2 input[type=text],
+.phorm2 input[type=password] {
+  width: 130px;
+}
+.no-script {
+	color: red;
+	font-weight: bold;
+}	

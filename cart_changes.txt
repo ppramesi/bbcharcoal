@@ -1,0 +1,4 @@
+Update 
+views/checkout-form.php
+views/cart.php
+models/cart.php removed line 827

@@ -1,0 +1,11 @@
+# -FrontPage-
+
+Options None
+
+<Limit GET POST PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName bbcharcoal.com
+AuthUserFile /services/webpages/b/b/bbcharcoal.com/public/_vti_pvt/service.pwd
+AuthGroupFile /services/webpages/b/b/bbcharcoal.com/public/_vti_pvt/service.grp

@@ -1,0 +1,47 @@
+<?php
+
+  public function getUpsRates() {
+    $liveRates = new PHPurchaseLiveRates();
+    $cartWeight = $_SESSION['PHPurchaseCart']->getCartWeight();
+    $zip = $_SESSION['phpurchase_shipping_zip'];
+    $countryCode = $_SESSION['phpurchase_shipping_country_code'];
+    
+    if($cartWeight > 0 && isset($_SESSION['phpurchase_shipping_zip']) && isset($_SESSION['phpurchase_shipping_country_code'])) {
+	  PHPurchaseCommon::log("User requested shipping rates to ".$_SESSION['phpurchase_shipping_zip'], TRUE);
+	
+      // Return the live rates from the session if the zip, country code, and cart weight are the same
+      if(isset($_SESSION['PHPurchaseLiveRates'])) {
+        $cartWeight = $this->getCartWeight();
+        $liveRates = $_SESSION['PHPurchaseLiveRates'];
+        PHPurchaseCommon::log(  "Live Rates were found in session. Now comparing...
+            $liveRates->weight --> $cartWeight
+            $liveRates->toZip --> $zip
+            $liveRates->toCountryCode --> $countryCode
+        ");
+        if($liveRates->weight == $cartWeight && $liveRates->toZip == $zip && $liveRates->toCountryCode == $countryCode) {
+          PHPurchaseCommon::log("Using Live Rates from the session");
+          return $liveRates; 
+        }
+      }
+
+      // If there are no live rates in the session or the zip/weight has been changed then look up new rates
+      $ups = new PHPurchaseUPS();
+      $liveRates->weight = $this->getCartWeight();
+      $liveRates->toZip = $zip;
+      $liveRates->toCountryCode = $countryCode;
+      $rates = $ups->getAllRates($zip, $countryCode, $liveRates->weight);
+      $liveRates->clearRates();
+      foreach($rates as $service => $rate) {
+        $liveRates->addRate($service, $rate['rate'], $rate['code']);
+      }
+    }
+    else {
+      $liveRates->weight = 0;
+      $liveRates->toZip = $zip;
+      $liveRates->toCountryCode = $countryCode;
+      $liveRates->addRate('Free Shipping', '0.00', NULL);
+    }
+    
+    $_SESSION['PHPurchaseLiveRates'] = $liveRates;
+    return $liveRates;
+  }

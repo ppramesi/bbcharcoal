@@ -1,0 +1,279 @@
+/* Remove dotted border from around links after they are clicked */
+a:active { outline: none; }
+a:focus { outline: none; }
+
+#viewCartTable {
+  margin: 12px 0px 12px 0px;
+  border: 1px solid #CCCCCC;
+  width: 100%;
+  clear: both;
+}
+
+#viewCartTable td,
+#viewCartTable th {
+  padding: 5px 5px 5px 5px;
+  margin: 0px;
+  border-bottom: 1px solid #CCCCCC;
+  vertical-align: middle;
+  line-height: 1.5em;
+}
+
+#viewCartTable th {
+  background-color: #EEEEEE;
+  vertical-align: middle;
+}
+
+#viewCartTable td.noBorder {
+  border:none;
+}
+
+#viewCartTable td.navRow {
+
+}
+
+#viewCartTableNav {
+  margin: 15px 0px;
+  width: 100%;
+  border: none !important;
+}
+
+#viewCartTable a, 
+#viewCartTable tbody,
+#viewCartTable img,
+#viewCartTableNav a, 
+#viewCartTableNav tr,
+#viewCartTableNav th,
+#viewCartTableNav td,
+#viewCartTableNav tbody,
+#viewCartTableNav img {
+  border: none !important;
+}
+
+#continueShopping {
+  border: none;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+#paypalCheckout {
+  width: 145px; 
+}
+
+#phpurchaseErrors {
+  background-color: #FEE;
+  border: 1px solid red;
+  width: 500px;
+  padding:15px;
+  margin: 15px 0px;
+  clear: both;
+}
+
+.purAddToCart {
+  vertical-align: middle; 
+  width: auto !important; 
+  margin: 7px 0px;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.PHPurchaseCartButton {
+  /* text-align: center; */
+  border: none !important;
+}
+
+.PHPurchasePrice {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 3px 7px 4px 0px;
+  display: inline-block;
+}
+
+.PHPurchaseCustomFieldDesc {
+  color: #777;
+  font-style: italic;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+.PHPurchaseCustomTextField {
+  width: 225px;
+}
+
+.PHPurchaseCustomTextarea {
+  width: 225px;
+  height: 90px;
+}
+
+.PHPurchaseTableMed {
+  width: auto;
+  border: 0px;
+  border-collapse: collapse;
+}
+
+.PHPurchaseTableMed th,
+.PHPurchaseTableMed td {
+  margin: 0px;
+  text-align: left;
+  border: none;
+  padding: 3px 7px;
+}
+
+.PHPurchaseTableMed td {
+  border-top: 1px solid #CFCFCF;
+}
+
+.PHPurchaseTableMed td.canceled {
+  color: #858585;
+}
+
+.PHPurchaseNote {
+  color: #888;
+}
+
+.PHPurchaseGravityFormDisplay {
+  display: block;
+  
+  
+  /*
+  background-color: #EEEEEE;
+  border: 1px solid #CFCFCF;
+  padding: 5px;
+  margin: 3px;
+  width: auto;
+  */
+}
+
+/*
+.PHPurchaseGravityFormDisplayTitle {
+  display: none;
+}
+
+.PHPurchaseGravityFormDisplayList {
+  margin: 0px;
+  padding: 0px;
+}
+
+.PHPurchaseGravityFormDisplayList tr td {
+  border: none !important;
+  padding: 2px !important;
+  margin: 0px;
+}
+
+.PHPurchaseGravityFormDisplayList tr td.gfLabel {
+  text-align: right;
+}
+*/
+
+.PHPurchaseRemoveFormLink {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+.PHPurchaseProRequired {
+  font-weight:normal; 
+  color:#B33; 
+  font-size:11px; 
+  font-family:arial;
+  background-color: #FEE;
+  border: 2px solid #B33;
+  padding: 3px;
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.PHPurchaseProRequired a {
+  color: #933;
+  font-weight: bold;
+}
+
+.PHPurchaseUnavailable {
+  position: absolute;
+  border: 1px solid #70091A;
+  
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  -moz-box-shadow: 7px 7px 15px #CCCCCC;
+  -webkit-box-shadow: 7px 7px 15px #CCCCCC;
+  box-shadow: 7px 7px 15px #CCCCCC;
+  
+  background-color: #EEEEEE;
+  padding: 5px 20px;
+  margin: 0px;
+  top: 25%;
+  left: 32%;
+  width: 400px;
+  height: auto;
+  color: black;
+}
+
+.PHPurchaseUnavailable h2 {
+  line-height: 1.5em !important;
+}
+
+.PHPurchaseUnavailable p {
+  line-height: 1.2em !important;
+}
+
+.PHPurchaseOutOfStock {
+  color: #70091A;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.PHPurchaseAjaxWarning {
+  color: #C00;
+  border: 1px solid #C55;
+  background-color: #EEE;
+  width: 200px;
+  padding: 7px;
+}
+
+.inventory_count_table_modal {
+  margin: 5px 0px;
+  padding: 10px;
+  width: 100%;
+  border-collapse:collapse;
+  color: black;
+}
+
+.inventory_count_table_modal td {
+  padding: 3px 5px;
+  border-bottom: 1px solid #CCC;
+}
+
+/* Gravity Forms Cart View Styles */
+table .entry-details {
+  width: 100%;
+}
+
+table .entry-details tbody {
+  padding: 0px;
+  margin: 0px;
+  background-color: #fff;
+}
+
+#viewCartTable td .entry-view-field-name {
+  font-weight: bold;
+  background-color: #eee;
+  margin: 0px;
+  border: none;
+}
+
+td .entry-view-field-value {
+  padding-left: 25px !important;
+  border: none !important;
+}
+
+#set-shipping-zip-code th, #set_shipping_zip_row th {
+	border-top: 1px solid #CCC;	
+}
+.required-zip-code {
+	color: #EA2B2D;	
+}

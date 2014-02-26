@@ -1,0 +1,16 @@
+# The name of the area
+AuthName "wp login"
+
+# Type of authentication. Always basic
+AuthType Basic
+
+# Path to .htpasswd file for the site.
+# It's preferable to not have this in any
+# of the site's content directories.
+#AuthUserFile /mnt/stor9-wc2-dfw1/528353/528995/www.bbcharcoal.com/web/content/ups-labels/.htpasswd
+
+# The requirements to view the site. This
+# requires that the browser provide
+# credentials matching on of the users in
+# the .htpasswd file specified above.
+Require valid-user
