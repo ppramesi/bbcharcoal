@@ -205,33 +205,11 @@ if(count($items)): ?>
         
           <tr id="set_shipping_zip_row" <?php echo $zipStyle; ?>>
             <th colspan="5" align="right">
-            	<span class='required-zip-code'>*Enter Your Zip Code</span>:
-
-              <input type="text" name="shipping_zip" value="" id="shipping_zip" size="5" />
-              <?php if($setting->lookupValue('international_sales')): ?>
-                <select name="shipping_country_code">
-                  <?php
-                    $customCountries = PHPurchaseCommon::getCustomCountries();
-                    foreach($customCountries as $code => $name) {
-                      echo "<option value='$code'>$name</option>\n";
-                    }
-                  ?>
-                </select>
-              <?php else: ?>
-                <?php
-                  $homeCountry = $setting->lookupValue('home_country');
-                  if($homeCountry) {
-                    list($homeCountryCode, $homeCountryName) = explode('~', $homeCountry);
-                  }
-                  else {
-                    $homeCountryCode = 'US'; // Default to US if the home country code cannot be determined
-                  }
-                ?>
-                <input type="text" name="shipping_country_code" value="<?php echo $homeCountryCode ;?>" id="shipping_country_code" style="margin-right: -4px">
-              <?php endif; ?>
+            	<span style="position: relative;top: 1px;">Would You Need Lift Gate?<span style="color: #808080; font-size:.8em"> (For Pallet/Freight Shipping Only)</span>:</span><input id="liftgate-box" type="checkbox" name="liftGate" value="yes" style="margin-right: -4px;margin-left: 6px;margin-bottom: 8px;position: relative;top: 6px;height: 17px;width: 17px;" <?php if(strcasecmp($_SESSION['liftGate'], "yes") == 0){echo "checked";} ?>/>
+              
 			  <br>
               <span>Delivery Location Type<span style="color: #808080; font-size:.8em"> (For Pallet/Freight Shipping Only)</span>:</span>
-              <select title="type" id="shipping-location-type" name="locationType" style="margin-left: 0">
+              <select title="type" id="shipping-location-type" name="locationType" style="margin-left: 0;margin-right: -4px;width: 219px;height: 24px;">
 				  <option value="Commercial">Commercial/Business</option>
 				  <option value="Residential">Residential</option>
 				  <option value="DistributionCenter">Distribution Center</option>
@@ -257,8 +235,30 @@ if(count($items)): ?>
 				  <option value="OtherLimitedAccess">Other Limited Access</option>
               </select>
 			  <br>
-			  <span>Would You Need Lift Gate?<span style="color: #808080; font-size:.8em"> (For Pallet/Freight Shipping Only)</span>:</span><input id="liftgate-box" type="checkbox" name="liftGate" value="yes" />
-              <input type="submit" name="updateCart" value="Calculate Shipping" id="shipping_submit" class="PHPurchaseButtonSecondary" style="width: 153px !important"/>
+			  <span class='required-zip-code'>*Enter Your Zip Code</span>:<input type="text" name="shipping_zip" value="" id="shipping_zip" size="5" style="margin-right: -4px;margin-left: 5px;"/>
+				<?php if($setting->lookupValue('international_sales')): ?>
+                <select name="shipping_country_code">
+                  <?php
+                    $customCountries = PHPurchaseCommon::getCustomCountries();
+                    foreach($customCountries as $code => $name) {
+                      echo "<option value='$code'>$name</option>\n";
+                    }
+                  ?>
+                </select>
+              <?php else: ?>
+                <?php
+                  $homeCountry = $setting->lookupValue('home_country');
+                  if($homeCountry) {
+                    list($homeCountryCode, $homeCountryName) = explode('~', $homeCountry);
+                  }
+                  else {
+                    $homeCountryCode = 'US'; // Default to US if the home country code cannot be determined
+                  }
+                ?>
+                <input type="text" name="shipping_country_code" value="<?php echo $homeCountryCode ;?>" id="shipping_country_code" style="margin-right: -4px">
+              <?php endif; ?>
+			  <br>
+              <input type="submit" name="updateCart" value="Calculate Shipping" id="shipping_submit" class="PHPurchaseButtonSecondary" style="width: 220px !important;"/>
             </th>
           </tr>
         <?php else:  // Cart in read mode ?>
