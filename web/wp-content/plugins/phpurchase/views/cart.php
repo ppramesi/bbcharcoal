@@ -256,6 +256,8 @@ if(count($items)): ?>
 				  <option value="CarrierTerminal">Trucking Terminal</option>
 				  <option value="OtherLimitedAccess">Other Limited Access</option>
               </select>
+			  <br>
+			  <span>Would You Need Lift Gate?<span style="color: #808080; font-size:.8em"> (For Pallet/Freight Shipping Only)</span>:</span><input id="liftgate-box" type="checkbox" name="liftGate" value="yes" />
               <input type="submit" name="updateCart" value="Calculate Shipping" id="shipping_submit" class="PHPurchaseButtonSecondary" style="width: 153px !important"/>
             </th>
           </tr>

@@ -246,6 +246,7 @@ function PHPurchaseInitCart() {
       if($_POST['updateCart'] == 'Calculate Shipping') {
         $_SESSION['phpurchase_shipping_zip'] = $_POST['shipping_zip'];
 		$_SESSION['freight_loc_type'] = $_POST['locationType'];
+		$_SESSION['liftGate'] = $_POST['liftGate'];
         $_SESSION['phpurchase_shipping_country_code'] = $_POST['shipping_country_code'];
       }
       

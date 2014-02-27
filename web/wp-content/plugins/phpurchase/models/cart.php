@@ -981,6 +981,7 @@ class PHPurchaseCart {
         $param['count'] = $this->countItems();
         $param['destinationZip'] = $zip;
 		$param['destinationType'] = $_SESSION['freight_loc_type'];
+		$param['liftGate'] = strcasecmp($_SESSION['liftGate'], "yes") == 0 ? 1 : 0;
 		if(isset($_SESSION['PHPurchaseLiveRates'])) {
           $cartWeight = $this->getCartWeight();
           $liveRates = $_SESSION['PHPurchaseLiveRates'];

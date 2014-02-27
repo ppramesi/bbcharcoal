@@ -115,7 +115,7 @@ class freightShipping{
 		$destinationState = $this->param['destinationState'];
 		$destinationZip = $this->param['destinationZip'];
 		$destinationType = $this->param['destinationType'];
-
+		$liftGateYes = $this->param['liftGate'];
 		$client = new SoapClient(
 			"http://www.efreightline.com/EFLWebServices/Public/ShipperService.asmx?WSDL",
 			array(
@@ -147,7 +147,12 @@ class freightShipping{
 		$itemParams->PieceCount = s_wrap($count, "int"); // optional – only refers to this particular instance of ShippingItem – in     most cases it is more appropriate to create another ShippingItem
 		$itemParams->Equipment = s_wrap("", "int");
 		$request = new stdClass();
-		$request->ShippingItems = s_wrap(array("ShippingItem" => s_wrap($itemParams, "encase")), "encase");  
+		$request->ShippingItems = s_wrap(array("ShippingItem" => s_wrap($itemParams, "encase")), "encase");
+		$liftGate = new stdClass();
+		$liftGate->Code = s_wrap("delv_liftgate");
+		$liftGate->Value = s_wrap($liftGateYes, "int");
+		$request->Accessorials = s_wrap(array("Accessorials" => s_wrap($liftGate, "encase")), "encase");
+		
 		//$request->RefNumber = s_wrap($refNumber);  
 		// Must declare either City & State combination or Zip
 		// It is OK to supply all three
